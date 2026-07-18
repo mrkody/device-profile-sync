@@ -1,6 +1,6 @@
 {
-  "remarks": "Auto-Balancer RU-White (leastPing backup)",
-  "ps": "Auto-Balancer RU-White (leastPing backup)",
+  "remarks": "Profile B (backup)",
+  "ps": "Profile B (backup)",
   "log": {
     "loglevel": "warning"
   },
@@ -978,7 +978,7 @@
     "domainStrategy": "AsIs",
     "balancers": [
       {
-        "tag": "Auto-Balancer-RU-White",
+        "tag": "balancer",
         "selector": [
           "vless-"
         ],
@@ -992,7 +992,7 @@
       {
         "type": "field",
         "network": "tcp,udp",
-        "balancerTag": "Auto-Balancer-RU-White"
+        "balancerTag": "balancer"
       }
     ]
   },

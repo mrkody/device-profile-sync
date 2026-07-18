@@ -1,6 +1,6 @@
 {
-  "remarks": "Auto-Balancer RU-White",
-  "ps": "Auto-Balancer RU-White",
+  "remarks": "Profile A",
+  "ps": "Profile A",
   "log": {
     "loglevel": "warning"
   },
@@ -978,7 +978,7 @@
     "domainStrategy": "AsIs",
     "balancers": [
       {
-        "tag": "Auto-Balancer-RU-White",
+        "tag": "balancer",
         "selector": [
           "vless-"
         ],
@@ -1002,7 +1002,7 @@
       {
         "type": "field",
         "network": "tcp,udp",
-        "balancerTag": "Auto-Balancer-RU-White"
+        "balancerTag": "balancer"
       }
     ]
   },

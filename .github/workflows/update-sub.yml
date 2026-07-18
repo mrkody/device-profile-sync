@@ -1,4 +1,4 @@
-name: Update VPN subscription
+name: Sync profiles
 
 on:
   schedule:
@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: update-sub
+  group: sync-profiles
   cancel-in-progress: true
 
 jobs:
@@ -22,17 +22,17 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Generate balanced configs
+      - name: Generate profiles
         run: python3 docs/build_config.py
 
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/Auto-Balancer-RU-White.json docs/Auto-Balancer-RU-White-leastPing-backup.json
+          git add docs/profile-a.json docs/profile-b.json
           if git diff --staged --quiet; then
-            echo "No changes in the server list, skipping commit."
+            echo "No changes, skipping commit."
           else
-            git commit -m "Update VPN subscription $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git commit -m "Sync profiles $(date -u +%Y-%m-%dT%H:%M:%SZ)"
             git push
           fi

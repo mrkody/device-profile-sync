@@ -14,11 +14,11 @@ import urllib.parse as up
 import urllib.request
 
 SOURCE_URL = "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/Vless-Reality-White-Lists-Rus-Mobile.txt"
-BALANCER_TAG = "Auto-Balancer-RU-White"
+BALANCER_TAG = "balancer"
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-OUT_LEASTLOAD = os.path.join(SCRIPT_DIR, "Auto-Balancer-RU-White.json")
-OUT_LEASTPING = os.path.join(SCRIPT_DIR, "Auto-Balancer-RU-White-leastPing-backup.json")
+OUT_LEASTLOAD = os.path.join(SCRIPT_DIR, "profile-a.json")
+OUT_LEASTPING = os.path.join(SCRIPT_DIR, "profile-b.json")
 
 FP_PRIORITY = {"chrome": 0, "edge": 1, "firefox": 2, "safari": 3, "ios": 4, "android": 5, "qq": 6, "random": 7, "": 8}
 
@@ -302,12 +302,12 @@ def main():
     balancer_tags = [o["tag"] for o in outbounds]
     print(f"Unique servers: {len(outbounds)} (from {len(lines)} lines)")
 
-    least_load_cfg = with_least_load(base_config(outbounds, "Auto-Balancer RU-White"), balancer_tags)
+    least_load_cfg = with_least_load(base_config(outbounds, "Profile A"), balancer_tags)
     with open(OUT_LEASTLOAD, 'w', encoding='utf-8') as f:
         json.dump(least_load_cfg, f, ensure_ascii=False, indent=2)
     print("Written (primary, leastLoad):", OUT_LEASTLOAD)
 
-    least_ping_cfg = with_least_ping(base_config(outbounds, "Auto-Balancer RU-White (leastPing backup)"), balancer_tags)
+    least_ping_cfg = with_least_ping(base_config(outbounds, "Profile B (backup)"), balancer_tags)
     with open(OUT_LEASTPING, 'w', encoding='utf-8') as f:
         json.dump(least_ping_cfg, f, ensure_ascii=False, indent=2)
     print("Written (backup, leastPing):", OUT_LEASTPING)

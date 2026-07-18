@@ -1,13 +1,15 @@
-# Auto-Balancer RU White — live VPN subscription
+# Profile sync
 
-`docs/build_config.py` скачивает список серверов из [igareck/vpn-configs-for-russia](https://github.com/igareck/vpn-configs-for-russia)
-(`Vless-Reality-White-Lists-Rus-Mobile.txt`), убирает дубликаты (по fp=chrome > edge > firefox > ...),
-выбрасывает серверы с меткой Russia и собирает два Xray-core JSON-конфига с авто-балансировщиком:
+`docs/build_config.py` скачивает список серверов из источника, указанного в
+`SOURCE_URL` внутри скрипта, убирает дубликаты (по fp=chrome > edge > firefox > ...),
+выбрасывает записи с меткой Russia и собирает два клиентских JSON-конфига
+с авто-балансировщиком:
 
-- `docs/Auto-Balancer-RU-White.json` — основной, стратегия `leastLoad` + `burstObservatory`
+- `docs/profile-a.json` — основной, стратегия `leastLoad` + `burstObservatory`
   (быстрая сходимость: трафик держится на 5 лучших по RTT серверах, а не мечется между всеми).
-- `docs/Auto-Balancer-RU-White-leastPing-backup.json` — резервный, стратегия `leastPing` + `observatory`
-  (более старая, но гарантированно рабочая в Happ, если `leastLoad` не поддерживается сборкой Xray-core).
+- `docs/profile-b.json` — резервный, стратегия `leastPing` + `observatory`
+  (более старая, но гарантированно рабочая, если `leastLoad` не поддерживается
+  используемым клиентом).
 
 ## Как это становится "живой" подпиской
 
@@ -17,32 +19,32 @@ GitHub Pages отдаёт `docs/` как статический сайт, поэ
 постоянный публичный URL вида:
 
 ```
-https://<твой-github-username>.github.io/<repo>/Auto-Balancer-RU-White.json
+https://<username>.github.io/<repo>/profile-a.json
 ```
 
-Именно этот URL нужно вставить в Happ как ссылку на подписку — при каждом обновлении
-подписки в приложении будет подтягиваться свежий список серверов с GitHub.
+Этот URL добавляется в клиент как ссылка на подписку — при каждом обновлении
+подписки будет подтягиваться актуальный список серверов из первоисточника.
 
 ## Разовая настройка (руками, на github.com)
 
 1. Создать новый репозиторий на GitHub (публичный — приватные репо на GitHub Pages
-   для personal-аккаунтов нужен platform GitHub Pro).
+   для personal-аккаунтов нужен платный тариф).
 2. Запушить содержимое этой папки в `main`.
 3. Settings → Pages → Source: **Deploy from a branch**, Branch: `main`, Folder: `/docs`.
 4. Settings → Actions → General → Workflow permissions →
-   **Read and write permissions** (иначе шаг `git push` в воркфлоу упадёт с ошибкой доступа).
-5. Проверить: Actions → "Update VPN subscription" → Run workflow (ручной запуск),
+   **Read and write permissions** (иначе шаг `git push` в workflow упадёт с ошибкой доступа).
+5. Проверить: Actions → "Sync profiles" → Run workflow (ручной запуск),
    убедиться, что коммит с обновлённым JSON появился.
-6. URL для Happ: `https://<username>.github.io/<repo>/Auto-Balancer-RU-White.json`.
+6. Итоговый URL: `https://<username>.github.io/<repo>/profile-a.json`.
 
 ## Важно про приватность
 
-Репозиторий публичный, значит и сгенерированные JSON с UUID/паролями серверов будут
-общедоступны по прямой ссылке. Утечки это не создаёт (сами серверы и так публично
-раздаются в исходном списке на GitHub), но кто угодно, кто узнает твой URL подписки,
-сможет забрать себе те же 26 серверов.
+Репозиторий публичный, значит сгенерированные JSON с идентификаторами серверов
+тоже общедоступны по прямой ссылке. Сами конфиги (протокол, поля) не скрывают
+своё назначение от того, кто откроет код — переименование файлов/репозитория
+защищает только от беглого просмотра и поиска, не от содержимого.
 
-## Локальный запуск без GitHub
+## Локальный запуск
 
 ```
 python3 docs/build_config.py
