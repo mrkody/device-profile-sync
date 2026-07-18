@@ -1,0 +1,38 @@
+name: Update VPN subscription
+
+on:
+  schedule:
+    - cron: '*/20 * * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-sub
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Generate balanced configs
+        run: python3 docs/build_config.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/Auto-Balancer-RU-White.json docs/Auto-Balancer-RU-White-leastPing-backup.json
+          if git diff --staged --quiet; then
+            echo "No changes in the server list, skipping commit."
+          else
+            git commit -m "Update VPN subscription $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git push
+          fi
