@@ -44,10 +44,10 @@
         "vnext": [
           {
             "address": "5.188.115.69",
-            "port": 5443,
+            "port": 4443,
             "users": [
               {
-                "id": "1bb32313-369e-421e-b7b0-81f9969b67f1",
+                "id": "3981bee1-b043-4c6a-98a0-69ba63513bf7",
                 "encryption": "none"
               }
             ]
@@ -76,11 +76,43 @@
       "settings": {
         "vnext": [
           {
-            "address": "5.188.115.69",
-            "port": 5443,
+            "address": "45.9.15.56",
+            "port": 443,
             "users": [
               {
-                "id": "98513192-ca35-4f7f-a965-da1a2473675f",
+                "id": "218fd696-e3a2-4c33-b397-a5f13a82969e",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.tradingview.com",
+          "fingerprint": "chrome",
+          "publicKey": "iudzEpcjL_9hNvn7rf05GwUfV5zMpf8TSumBNo4VLTM",
+          "shortId": "b30a30f0"
+        }
+      },
+      "tag": "vless-02-Estonia-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "95.182.120.208",
+            "port": 2053,
+            "users": [
+              {
+                "id": "c7e9c591-2764-423a-afca-efbd010fd396",
                 "encryption": "none"
               }
             ]
@@ -90,15 +122,18 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/ws"
+          "path": "/",
+          "headers": {
+            "Host": "forfreeuse.sub-flow.online"
+          }
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "amogus.razkur.dev",
-          "fingerprint": "chrome"
+          "serverName": "forfreeuse.sub-flow.online",
+          "fingerprint": "edge"
         }
       },
-      "tag": "vless-02-Germany-CIDR",
+      "tag": "vless-03-Finland-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -126,7 +161,7 @@
           "fingerprint": "chrome"
         }
       },
-      "tag": "vless-03-Anycast-IP-CIDR",
+      "tag": "vless-04-Anycast-IP-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
