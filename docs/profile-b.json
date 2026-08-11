@@ -43,11 +43,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "178.159.94.108",
-            "port": 2083,
+            "address": "176.108.252.240",
+            "port": 9443,
             "users": [
               {
-                "id": "83eda926-645c-4f88-9dbe-bf33ac18c8f4",
+                "id": "130e6aab-9eba-441e-9021-22cbccc72832",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -64,13 +64,12 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "swe-one.quiet-rogue.site",
-          "fingerprint": "edge",
-          "publicKey": "40eDnye2AHCQqgM2_ikKzRayZ4Vlu4rnnkHmLmNalQc",
-          "shortId": "32a37218722f0081"
+          "serverName": "io.ozone.ru",
+          "fingerprint": "chrome",
+          "publicKey": "im7-98zxWz_OGimQfeoN_Y5p1tAy8KoZCxOe2wOeWS4"
         }
       },
-      "tag": "vless-01-Sweden-CIDR",
+      "tag": "vless-01-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -81,11 +80,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "ru156.mechvpn.online",
-            "port": 443,
+            "address": "91.185.83.94",
+            "port": 5443,
             "users": [
               {
-                "id": "53c76647-14d1-4df5-99cb-be99ad2e6bd9",
+                "id": "8e9e9f2a-f4ee-48a3-aa3f-d79169890ca8",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -100,13 +99,14 @@
             "type": "none"
           }
         },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "ru156.mechvpn.online",
-          "fingerprint": "chrome"
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "5post-gate.x5.ru",
+          "fingerprint": "chrome",
+          "publicKey": "A3BZvaih9lBbMaKWjndiEdhCDZLMRbeRD1fI8CP4324"
         }
       },
-      "tag": "vless-02-Anycast-IP-CIDR-VK",
+      "tag": "vless-02-Germany-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -117,11 +117,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.247.16.4",
-            "port": 4100,
+            "address": "194.93.0.28",
+            "port": 443,
             "users": [
               {
-                "id": "a484645e-59df-4980-b649-92b71250ec60",
+                "id": "218fd696-e3a2-4c33-b397-a5f13a82969e",
                 "encryption": "none"
               }
             ]
@@ -129,48 +129,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/v1",
-          "headers": {
-            "Host": "live.ok.ru"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "grpc"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "media2.tcpdoor.net",
+          "fingerprint": "chrome",
+          "publicKey": "vxhkDXfYpz1OLqZ-_9QVoQr3_UJLtJFheb5bD5YH7z8",
+          "shortId": "3303c7a5"
+        }
       },
-      "tag": "vless-03-Anycast-IP-CIDR",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.247.16.4",
-            "port": 2200,
-            "users": [
-              {
-                "id": "106b0505-da24-4ae4-b22c-302ab814f6f4",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/v1",
-          "headers": {
-            "Host": "rzd.ru"
-          }
-        },
-        "security": "none"
-      },
-      "tag": "vless-04-Anycast-IP-CIDR",
+      "tag": "vless-03-Germany-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -213,7 +184,7 @@
         "strategy": {
           "type": "leastPing"
         },
-        "fallbackTag": "vless-01-Sweden-CIDR"
+        "fallbackTag": "vless-01-CIDR"
       }
     ],
     "rules": [
