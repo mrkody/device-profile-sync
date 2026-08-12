@@ -43,49 +43,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "37.18.14.121",
-            "port": 2027,
+            "address": "81.163.23.248",
+            "port": 443,
             "users": [
               {
-                "id": "851ed0d8-a37b-452d-8ef2-5b6c2d28a060",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "storage.yandex.net",
-          "fingerprint": "chrome",
-          "publicKey": "ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo",
-          "shortId": "dc8109baf0f607ea"
-        }
-      },
-      "tag": "vless-01-Germany-CIDR-CDN",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "109.237.98.145",
-            "port": 8443,
-            "users": [
-              {
-                "id": "16c77fca-1dfa-43b3-8ecb-5a8a5ce71347",
+                "id": "7170c66c-3c0b-4cd0-acbb-01774a6b7179",
                 "encryption": "none"
               }
             ]
@@ -93,15 +55,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
+        "network": "ws",
+        "wsSettings": {
+          "path": "/avi/v1/info",
+          "headers": {
+            "Host": "selec248.apruxdomain.website"
           }
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "selec248.apruxdomain.website",
+          "fingerprint": "edge"
+        }
       },
-      "tag": "vless-02-Germany-CIDR",
+      "tag": "vless-01-Bouvet-Island-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -112,11 +79,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "194.93.0.28",
-            "port": 443,
+            "address": "80.78.244.33",
+            "port": 9891,
             "users": [
               {
-                "id": "218fd696-e3a2-4c33-b397-a5f13a82969e",
+                "id": "130e6aab-9eba-441e-9021-22cbccc72832",
                 "encryption": "none"
               }
             ]
@@ -126,16 +93,46 @@
       "streamSettings": {
         "network": "grpc",
         "grpcSettings": {
-          "serviceName": "grpc",
-          "authority": "BIA_TELEGRAM@MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI"
+          "serviceName": "grpc-tunnel"
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "media2.tcpdoor.net",
-          "fingerprint": "edge",
-          "publicKey": "vxhkDXfYpz1OLqZ-_9QVoQr3_UJLtJFheb5bD5YH7z8",
-          "shortId": "3303c7a5"
+          "serverName": "dl.google.com",
+          "fingerprint": "chrome",
+          "publicKey": "Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0"
         }
+      },
+      "tag": "vless-02-Czechia-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "194.87.161.60",
+            "port": 4100,
+            "users": [
+              {
+                "id": "9b44bfb4-9d28-4870-9fc3-5154d6d462ff",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/v1",
+          "headers": {
+            "Host": "live.ok.ru"
+          }
+        },
+        "security": "none"
       },
       "tag": "vless-03-Germany-CIDR",
       "mux": {
@@ -148,11 +145,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "109.237.98.80",
-            "port": 8443,
+            "address": "66.90.93.74",
+            "port": 8444,
             "users": [
               {
-                "id": "16c77fca-1dfa-43b3-8ecb-5a8a5ce71347",
+                "id": "e83af88a-a884-48ba-b462-a1edccff15e7",
                 "encryption": "none"
               }
             ]
@@ -160,15 +157,17 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "path": "/api/v1/connect"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "gateway-v1.bosx.net",
+          "fingerprint": "chrome"
+        }
       },
-      "tag": "vless-04-The-Netherlands-CIDR",
+      "tag": "vless-04-The-Netherlands-CIDR-Bee",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -179,11 +178,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "109.237.98.115",
-            "port": 8443,
+            "address": "66.90.93.74",
+            "port": 8449,
             "users": [
               {
-                "id": "16c77fca-1dfa-43b3-8ecb-5a8a5ce71347",
+                "id": "e83af88a-a884-48ba-b462-a1edccff15e7",
                 "encryption": "none"
               }
             ]
@@ -191,15 +190,17 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "path": "/api/v6/connect"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "gateway-v1.bosx.net",
+          "fingerprint": "chrome"
+        }
       },
-      "tag": "vless-05-Poland-CIDR",
+      "tag": "vless-05-United-States-CIDR-Beeli",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -274,104 +275,6 @@
       }
     },
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "79.137.192.188",
-            "port": 2200,
-            "users": [
-              {
-                "id": "106b0505-da24-4ae4-b22c-302ab814f6f4",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/v1",
-          "headers": {
-            "Host": "rzd.ru"
-          }
-        },
-        "security": "none"
-      },
-      "tag": "vless-08-Anycast-IP-CIDR",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "66.90.93.74",
-            "port": 8444,
-            "users": [
-              {
-                "id": "e83af88a-a884-48ba-b462-a1edccff15e7",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/api/v1/connect"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "gateway-v1.bosx.net",
-          "fingerprint": "edge"
-        }
-      },
-      "tag": "vless-09-Anycast-IP-CIDR-Beeline",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "66.90.93.74",
-            "port": 8449,
-            "users": [
-              {
-                "id": "e83af88a-a884-48ba-b462-a1edccff15e7",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/api/v6/connect"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "gateway-v1.bosx.net",
-          "fingerprint": "edge"
-        }
-      },
-      "tag": "vless-10-Anycast-IP-CIDR-Beeline",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
       "tag": "direct",
       "protocol": "freedom",
       "settings": {}
@@ -408,7 +311,7 @@
         "strategy": {
           "type": "leastPing"
         },
-        "fallbackTag": "vless-01-Germany-CIDR-CDN"
+        "fallbackTag": "vless-01-Bouvet-Island-CIDR"
       }
     ],
     "rules": [
