@@ -43,6 +43,44 @@
       "settings": {
         "vnext": [
           {
+            "address": "78.159.246.204",
+            "port": 2027,
+            "users": [
+              {
+                "id": "851ed0d8-a37b-452d-8ef2-5b6c2d28a060",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "storage.yandex.net",
+          "fingerprint": "chrome",
+          "publicKey": "ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo",
+          "shortId": "dc8109baf0f607ea"
+        }
+      },
+      "tag": "vless-01-Germany-CIDR-Beeline",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "138.124.255.236",
             "port": 443,
             "users": [
@@ -70,7 +108,7 @@
           "shortId": "e91da98020a38be9"
         }
       },
-      "tag": "vless-01-Germany-CIDR",
+      "tag": "vless-02-Germany-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -100,7 +138,7 @@
           "fingerprint": "chrome"
         }
       },
-      "tag": "vless-02-Estonia-CIDR",
+      "tag": "vless-03-Estonia-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -111,11 +149,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "135.106.195.75",
-            "port": 701,
+            "address": "185.186.143.76",
+            "port": 443,
             "users": [
               {
-                "id": "c63b5d3f-7417-4c8f-9262-5c603279f042",
+                "id": "20c4eab4-b569-4423-90d2-3e3364669e6f",
                 "encryption": "none"
               }
             ]
@@ -123,15 +161,19 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "grpc"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "ru-kitchen.ru",
+          "fingerprint": "chrome",
+          "publicKey": "6vDdlh4aAipoRQ-IXDjzTUtKpZS09xtNXIisCa__2CM",
+          "shortId": "f74c6a18133e2e72"
+        }
       },
-      "tag": "vless-03-Poland-CIDR",
+      "tag": "vless-04-Norway-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -174,7 +216,7 @@
         "strategy": {
           "type": "leastPing"
         },
-        "fallbackTag": "vless-01-Germany-CIDR"
+        "fallbackTag": "vless-01-Germany-CIDR-Beeline"
       }
     ],
     "rules": [
