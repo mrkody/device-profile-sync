@@ -43,11 +43,46 @@
       "settings": {
         "vnext": [
           {
-            "address": "77.95.203.224",
+            "address": "176.109.85.88",
+            "port": 10443,
+            "users": [
+              {
+                "id": "2911867e-dba4-4d9a-a17e-b150b15fa683",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "grpc"
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "5post-gate.x5.ru",
+          "fingerprint": "edge",
+          "publicKey": "ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk",
+          "shortId": "5c766813929a1fdd"
+        }
+      },
+      "tag": "vless-01-Germany-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "msk-5.self-kvn.org",
             "port": 443,
             "users": [
               {
-                "id": "9d87d5c5-c188-4b38-b055-9df5fc184bb6",
+                "id": "b9fa61b2-2049-4e17-bc96-e99c07871afd",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -64,13 +99,13 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "foodnetwork.com",
-          "fingerprint": "chrome",
-          "publicKey": "x_Xq88pDWx7xLRYLUiSF0KrH7nPyt_Fy0w-E70dTr3A",
-          "shortId": "d4dbb62d53cd16ec"
+          "serverName": "fomin-clinic.ru",
+          "fingerprint": "firefox",
+          "publicKey": "Y7iH7q2MbNJyGAdTUfX4wFnxgh0dbuyFDI9Z20ABPjE",
+          "shortId": "79fdde3912083809"
         }
       },
-      "tag": "vless-01-CIDR",
+      "tag": "vless-02-Anycast-IP-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -81,11 +116,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "78.159.250.104",
-            "port": 15443,
+            "address": "80.68.156.43",
+            "port": 4100,
             "users": [
               {
-                "id": "a55e85e5-5b8b-4f8f-922e-cdbbd9711e86",
+                "id": "af60d475-3c13-41cf-af0e-18353d08877a",
                 "encryption": "none"
               }
             ]
@@ -93,15 +128,16 @@
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "max.ru",
-          "fingerprint": "chrome",
-          "publicKey": "w42qluNCHvJAkqCCjg_BHu7eTr2qRQYn93OKUSfmHEI"
-        }
+        "network": "ws",
+        "wsSettings": {
+          "path": "/v1",
+          "headers": {
+            "Host": "live.ok.ru"
+          }
+        },
+        "security": "none"
       },
-      "tag": "vless-02-Poland-CIDR-Beeline",
+      "tag": "vless-03-Anycast-IP-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -154,7 +190,7 @@
             "tolerance": 0.3
           }
         },
-        "fallbackTag": "vless-01-CIDR"
+        "fallbackTag": "vless-01-Germany-CIDR"
       }
     ],
     "rules": [
