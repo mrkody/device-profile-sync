@@ -43,11 +43,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "31.76.34.146",
+            "address": "138.124.255.236",
             "port": 443,
             "users": [
               {
-                "id": "f4f2229e-ca2a-40b1-b4ae-24248c21b645",
+                "id": "423b1d79-08c4-0003-9d5e-c541f791b55f",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -64,11 +64,10 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "cdn3-85.cdn-vkvideo.com",
+          "serverName": "russia.cendora.ru",
           "fingerprint": "chrome",
-          "publicKey": "QC03TEA8YdxpkQyJ8duwrqaP1dWAIlCjONzicWlWDjs",
-          "shortId": "b0d8f964b7ac8ac0",
-          "spiderX": "/api/v1/video/init"
+          "publicKey": "ZXi0bwZwOe9e5CMticA2-bU7qamHgs_sN-2kHygbDyk",
+          "shortId": "e91da98020a38be9"
         }
       },
       "tag": "vless-01-Germany-CIDR",
@@ -112,11 +111,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "test-cdn-vk-d.cdn.cachefleet.com",
-            "port": 443,
+            "address": "135.106.195.75",
+            "port": 701,
             "users": [
               {
-                "id": "be3960db-f339-479a-be7b-c1a130601141",
+                "id": "c63b5d3f-7417-4c8f-9262-5c603279f042",
                 "encryption": "none"
               }
             ]
@@ -124,14 +123,15 @@
         ]
       },
       "streamSettings": {
-        "network": "httpupgrade",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "test-cdn-vk-d.cdn.cachefleet.com",
-          "fingerprint": "chrome"
-        }
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "none"
       },
-      "tag": "vless-03-Estonia-CIDR",
+      "tag": "vless-03-Poland-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
