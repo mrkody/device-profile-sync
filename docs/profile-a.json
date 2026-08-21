@@ -43,64 +43,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "178.72.147.249",
-            "port": 4100,
-            "users": [
-              {
-                "id": "7ee53e03-96ed-4121-9da2-62f3d3374506",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/v1"
-        },
-        "security": "none"
-      },
-      "tag": "vless-01-CIDR",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "87.249.54.103",
-            "port": 4100,
-            "users": [
-              {
-                "id": "db7de26b-96d8-452c-8b9d-4a6bf55a7da7",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/v1"
-        },
-        "security": "none"
-      },
-      "tag": "vless-02-Anycast-IP-CIDR",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "85.193.80.164",
             "port": 2087,
             "users": [
@@ -125,7 +67,7 @@
           "shortId": "f2a4c6e8"
         }
       },
-      "tag": "vless-03-Anycast-IP-CIDR",
+      "tag": "vless-01-United-States-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -157,7 +99,119 @@
           "shortId": "1a2b3c4d"
         }
       },
-      "tag": "vless-04-Anycast-IP-CIDR",
+      "tag": "vless-02-Anycast-IP-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "85.193.80.164",
+            "port": 443,
+            "users": [
+              {
+                "id": "d01d5a74-09fb-4e9e-b0d9-38b5fd77ad70",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.kinopoisk.ru",
+          "fingerprint": "chrome",
+          "publicKey": "iWxxH0TWB1Ciz6sEwtfjUVY61OcTDihou5IJfkt0O0Q",
+          "shortId": "a3f8d21c4b907e56"
+        }
+      },
+      "tag": "vless-03-Anycast-IP-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "84.23.54.213",
+            "port": 443,
+            "users": [
+              {
+                "id": "710fc22f-06b2-03f6-bb3e-f57c17b670a6",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.ray-balance.space",
+          "fingerprint": "chrome",
+          "publicKey": "3tOekmYYkNW9IwHGuui6Y9bLmXoyiAmwAgtAdUAmDis"
+        }
+      },
+      "tag": "vless-04-Anycast-IP-CIDR-VK",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "201.51.3.146",
+            "port": 443,
+            "users": [
+              {
+                "id": "20df893e-dcf4-491d-8261-6dbb24f9566b",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.philips.com",
+          "fingerprint": "chrome",
+          "publicKey": "bBTka5j8aqNSD5hl8X0YUhwYH04IrPIaeKUFkijUllg"
+        }
+      },
+      "tag": "vless-05-Anycast-IP-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -210,7 +264,7 @@
             "tolerance": 0.3
           }
         },
-        "fallbackTag": "vless-01-CIDR"
+        "fallbackTag": "vless-01-United-States-CIDR"
       }
     ],
     "rules": [
