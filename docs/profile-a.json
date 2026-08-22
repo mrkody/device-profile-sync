@@ -81,78 +81,8 @@
       "settings": {
         "vnext": [
           {
-            "address": "213.226.112.225",
-            "port": 443,
-            "users": [
-              {
-                "id": "ef2c48a7-c113-4610-9d81-b35779660d9e",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "cloud.tvss-911.com",
-          "fingerprint": "chrome"
-        }
-      },
-      "tag": "vless-02-Germany-CIDR",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "78.159.250.33",
-            "port": 9002,
-            "users": [
-              {
-                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "serviceName": "grpc-reality"
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "api-maps.yandex.ru",
-          "fingerprint": "edge",
-          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-        }
-      },
-      "tag": "vless-03-The-Netherlands-CIDR-Bee",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "212.233.99.132",
-            "port": 6447,
+            "port": 443,
             "users": [
               {
                 "id": "663836b2-f676-43fb-977f-47c495b1b383",
@@ -172,13 +102,13 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "www.oracle.com",
-          "fingerprint": "edge",
-          "publicKey": "aFbCyrLOre-V3ORpBjqenGfDt62Ng_i1sSq-DmZHVgc",
-          "shortId": "89e0494514ec"
+          "serverName": "res.chick-team.ru",
+          "fingerprint": "firefox",
+          "publicKey": "NBiCX_Tj3BeMAyG-GbLLKpGjW_qacm3A2Mz5mN8v3Xk",
+          "shortId": "ab532d3308daa67b"
         }
       },
-      "tag": "vless-04-Norway-CIDR-VK",
+      "tag": "vless-02-CIDR-VK",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -216,7 +146,41 @@
           "shortId": "89e0494514ec"
         }
       },
-      "tag": "vless-05-Norway-CIDR-VK",
+      "tag": "vless-03-CIDR-VK",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "78.159.250.33",
+            "port": 9002,
+            "users": [
+              {
+                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "grpc-reality"
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "api-maps.yandex.ru",
+          "fingerprint": "firefox",
+          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+        }
+      },
+      "tag": "vless-04-France-CIDR-Beeline",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -254,7 +218,7 @@
           "shortId": "89e0494514ec"
         }
       },
-      "tag": "vless-06-Turkey-CIDR-VK",
+      "tag": "vless-05-Turkey-CIDR-VK",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -292,7 +256,39 @@
           "shortId": "89e0494514ec"
         }
       },
-      "tag": "vless-07-Turkey-CIDR-VK",
+      "tag": "vless-06-Turkey-CIDR-VK",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "5.42.106.111",
+            "port": 2200,
+            "users": [
+              {
+                "id": "099f0859-cb81-4a57-b6d8-2c8e18030627",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/v1",
+          "headers": {
+            "Host": "rzd.ru"
+          }
+        },
+        "security": "none"
+      },
+      "tag": "vless-07-Anycast-IP-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
