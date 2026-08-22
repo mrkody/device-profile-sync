@@ -43,32 +43,26 @@
       "settings": {
         "vnext": [
           {
-            "address": "85.198.70.200",
-            "port": 14406,
+            "address": "147.45.99.16",
+            "port": 4100,
             "users": [
               {
-                "id": "237f91bf-102e-4077-8cc3-baebccb42936",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "3637fb28-8c92-4518-a5d3-95524aef6e90",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
+        "network": "ws",
+        "wsSettings": {
+          "path": "/v1",
+          "headers": {
+            "Host": "live.ok.ru"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "vk.ru",
-          "fingerprint": "chrome",
-          "publicKey": "ldAmsl3dqTCUBmlmA8CS9ZnpznP6cFWj9AxNddWnbxY",
-          "shortId": "1a2b3c4d5e6f7a8b"
-        }
+        "security": "none"
       },
       "tag": "vless-01-CIDR",
       "mux": {
@@ -81,11 +75,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "78.159.250.33",
-            "port": 9002,
+            "address": "109.196.101.18",
+            "port": 2200,
             "users": [
               {
-                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                "id": "020530ec-acf3-41a3-b93e-838e6860bd74",
                 "encryption": "none"
               }
             ]
@@ -93,87 +87,16 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "serviceName": "grpc-reality"
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "api-maps.yandex.ru",
-          "fingerprint": "edge",
-          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-        }
-      },
-      "tag": "vless-02-The-Netherlands-CIDR-Bee",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "mnl.savesafe.space",
-            "port": 443,
-            "users": [
-              {
-                "id": "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ya.ru",
-          "fingerprint": "chrome",
-          "publicKey": "2P7D_IkxXWre3YziEe2tkF9L_gUbdZE_WCu9_SQq4hE",
-          "shortId": "2b5b1ffa8a6a1a68"
-        }
-      },
-      "tag": "vless-03-United-States-CIDR",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "84.23.54.213",
-            "port": 443,
-            "users": [
-              {
-                "id": "710fc22f-06b2-03f6-bb3e-f57c17b670a6",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
+        "network": "ws",
+        "wsSettings": {
+          "path": "/v1",
+          "headers": {
+            "Host": "rzd.ru"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.ray-balance.space",
-          "fingerprint": "edge",
-          "publicKey": "3tOekmYYkNW9IwHGuui6Y9bLmXoyiAmwAgtAdUAmDis"
-        }
+        "security": "none"
       },
-      "tag": "vless-04-Anycast-IP-CIDR-VK",
+      "tag": "vless-02-Anycast-IP-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
