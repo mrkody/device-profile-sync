@@ -43,6 +43,42 @@
       "settings": {
         "vnext": [
           {
+            "address": "45.91.54.73",
+            "port": 443,
+            "users": [
+              {
+                "id": "f463819c-5e64-458a-808b-6693afb47aa4",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "line.repaironline.biz",
+          "fingerprint": "chrome"
+        }
+      },
+      "tag": "vless-01-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "185.178.208.176",
             "port": 443,
             "users": [
@@ -65,10 +101,48 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "chat.cloud.v1.telemetryapi.uk",
-          "fingerprint": "chrome"
+          "fingerprint": "edge"
         }
       },
-      "tag": "vless-01-Germany-CIDR",
+      "tag": "vless-02-Germany-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "ads.yandex-cloud.org",
+            "port": 443,
+            "users": [
+              {
+                "id": "5e50f2b6-0cf8-4cc5-b68a-1c47b89bd257",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "ads.yandex-cloud.org",
+          "fingerprint": "edge",
+          "publicKey": "IuvAXlAWBpeXehmEk0P-FIGTctUhny2H3UilbWWfJC0",
+          "shortId": "122218f4c1f172e4"
+        }
+      },
+      "tag": "vless-03-Germany-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -98,12 +172,270 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "maps.apple.com",
+          "fingerprint": "edge",
+          "publicKey": "OMlQAFrCMZ3DX0xlnbEZiByLBFzpUE8XJHJsrBzLdlY",
+          "shortId": "2da4299da566b7"
+        }
+      },
+      "tag": "vless-04-Germany-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "api.yandex-api.org",
+            "port": 443,
+            "users": [
+              {
+                "id": "5e50f2b6-0cf8-4cc5-b68a-1c47b89bd257",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "api.yandex-api.org",
+          "fingerprint": "chrome",
+          "publicKey": "IuvAXlAWBpeXehmEk0P-FIGTctUhny2H3UilbWWfJC0",
+          "shortId": "122218f4c1f172e4"
+        }
+      },
+      "tag": "vless-05-France-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "line.repaironline.biz",
+            "port": 443,
+            "users": [
+              {
+                "id": "f463819c-5e64-458a-808b-6693afb47aa4",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "line.repaironline.biz",
+          "fingerprint": "edge"
+        }
+      },
+      "tag": "vless-06-Sweden-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "api.yandex-dev.com",
+            "port": 443,
+            "users": [
+              {
+                "id": "5e50f2b6-0cf8-4cc5-b68a-1c47b89bd257",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "api.yandex-dev.com",
+          "fingerprint": "edge",
+          "publicKey": "IuvAXlAWBpeXehmEk0P-FIGTctUhny2H3UilbWWfJC0",
+          "shortId": "122218f4c1f172e4"
+        }
+      },
+      "tag": "vless-07-Ukraine-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "77.221.151.51",
+            "port": 8443,
+            "users": [
+              {
+                "id": "95e8532b-cc69-42d4-9553-e3c23292b15b",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "your-custom-path"
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "maps.apple.com",
           "fingerprint": "chrome",
           "publicKey": "OMlQAFrCMZ3DX0xlnbEZiByLBFzpUE8XJHJsrBzLdlY",
           "shortId": "2da4299da566b7"
         }
       },
-      "tag": "vless-02-Germany-CIDR",
+      "tag": "vless-08-United-States-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "84.23.54.213",
+            "port": 443,
+            "users": [
+              {
+                "id": "710fc22f-06b2-03f6-bb3e-f57c17b670a6",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.ray-balance.space",
+          "fingerprint": "chrome",
+          "publicKey": "3tOekmYYkNW9IwHGuui6Y9bLmXoyiAmwAgtAdUAmDis"
+        }
+      },
+      "tag": "vless-09-Anycast-IP-CIDR-VK",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "in-ru-vk-01.ray-balance.space",
+            "port": 443,
+            "users": [
+              {
+                "id": "710fc22f-06b2-03f6-bb3e-f57c17b670a6",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.ray-balance.space",
+          "fingerprint": "chrome",
+          "publicKey": "3tOekmYYkNW9IwHGuui6Y9bLmXoyiAmwAgtAdUAmDis"
+        }
+      },
+      "tag": "vless-10-Anycast-IP-CIDR-VK",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "in-ru-vk-01.ray-balance.space",
+            "port": 443,
+            "users": [
+              {
+                "id": "710fc22f-06b2-03ef-bb3e-f57c17b670a6",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.ray-balance.space",
+          "fingerprint": "chrome",
+          "publicKey": "3tOekmYYkNW9IwHGuui6Y9bLmXoyiAmwAgtAdUAmDis"
+        }
+      },
+      "tag": "vless-11-Anycast-IP-CIDR-VK",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -146,7 +478,7 @@
         "strategy": {
           "type": "leastPing"
         },
-        "fallbackTag": "vless-01-Germany-CIDR"
+        "fallbackTag": "vless-01-CIDR"
       }
     ],
     "rules": [
