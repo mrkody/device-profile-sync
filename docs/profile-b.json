@@ -39,70 +39,6 @@
   ],
   "outbounds": [
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "91.185.83.113",
-            "port": 443,
-            "users": [
-              {
-                "id": "9b5d2c22-b904-47cd-8a04-100e60d5d81b",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "serviceName": "vlgrpc"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "fl.cloud-s3.xyz",
-          "fingerprint": "edge"
-        }
-      },
-      "tag": "vless-01-Finland-CIDR",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "46.8.208.55",
-            "port": 443,
-            "users": [
-              {
-                "id": "d0dc4548-3dad-451d-91e2-935097099f13",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "none"
-      },
-      "tag": "vless-02-The-Netherlands-CIDR",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
       "tag": "direct",
       "protocol": "freedom",
       "settings": {}
@@ -139,7 +75,7 @@
         "strategy": {
           "type": "leastPing"
         },
-        "fallbackTag": "vless-01-Finland-CIDR"
+        "fallbackTag": "direct"
       }
     ],
     "rules": [
