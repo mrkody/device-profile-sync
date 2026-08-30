@@ -43,44 +43,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "147.45.100.89",
-            "port": 443,
-            "users": [
-              {
-                "id": "918d29b8-8f78-40ec-96fa-b0c76f24b91b",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "5post-gate.x5.ru",
-          "fingerprint": "chrome",
-          "publicKey": "b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4",
-          "shortId": "e1f8a3b6"
-        }
-      },
-      "tag": "vless-01-Germany-CIDR",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "46.243.234.72",
             "port": 2053,
             "users": [
@@ -105,7 +67,43 @@
           "shortId": "20a080af5636a681"
         }
       },
-      "tag": "vless-02-Germany-CIDR-CDN",
+      "tag": "vless-01-Germany-CIDR-CDN",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "185.96.80.147",
+            "port": 443,
+            "users": [
+              {
+                "id": "bec4b96c-0328-4abd-be5e-437ac9f65bcd",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "cfbot",
+          "headers": {
+            "Host": "seksi-lady.ru"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "seksi-lady.ru",
+          "fingerprint": "chrome"
+        }
+      },
+      "tag": "vless-02-Germany-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -154,28 +152,34 @@
       "settings": {
         "vnext": [
           {
-            "address": "77.222.53.218",
-            "port": 2200,
+            "address": "62.113.106.165",
+            "port": 5012,
             "users": [
               {
-                "id": "1cb011db-0211-4120-8984-13d8510a612b",
-                "encryption": "none"
+                "id": "1206bad5-dcc9-410e-9595-d9fe9ee54085",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/v1",
-          "headers": {
-            "Host": "rzd.ru"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
           }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "pl.aeternavpn.space",
+          "fingerprint": "chrome",
+          "publicKey": "S-hF71pRzH9xT1zd3spq6RGlXCrpzyWpTmVKHbdTERg",
+          "shortId": "a1b2c3d4"
+        }
       },
-      "tag": "vless-04-Anycast-IP-CIDR",
+      "tag": "vless-04-Poland-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -228,7 +232,7 @@
             "tolerance": 0.3
           }
         },
-        "fallbackTag": "vless-01-Germany-CIDR"
+        "fallbackTag": "vless-01-Germany-CIDR-CDN"
       }
     ],
     "rules": [
