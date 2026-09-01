@@ -39,6 +39,112 @@
   ],
   "outbounds": [
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "sixseven.orionv4.online",
+            "port": 443,
+            "users": [
+              {
+                "id": "b4bd9c97-ba8e-4f31-8616-7812d03a8447",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/cdn/stream",
+          "headers": {
+            "Host": "sixseven.orionv4.online"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "sixseven.orionv4.online",
+          "fingerprint": "chrome"
+        }
+      },
+      "tag": "vless-01-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "46.243.234.193",
+            "port": 2053,
+            "users": [
+              {
+                "id": "e41dbbf8-b0ca-4328-a237-1520da5246c1",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "grpc-wl"
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "5post-gate.x5.ru",
+          "fingerprint": "firefox",
+          "publicKey": "bBKApM5WgpuMsXoaDD2Umv4K7pc-02P_yfmHClQ-Ong",
+          "shortId": "daa26763b27edd53"
+        }
+      },
+      "tag": "vless-02-Germany-CIDR-CDN",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "81.17.154.231",
+            "port": 2053,
+            "users": [
+              {
+                "id": "0d735822-3785-11f1-b1ef-3e73c4f3b53d",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "grpc-direct"
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "dzen.ru",
+          "fingerprint": "chrome",
+          "publicKey": "j8OW1foMwfeiy3VMbNPHLgTXgy_ZPdFFxv-H3HrbNF0",
+          "shortId": "f0c18fcc1d09b637"
+        }
+      },
+      "tag": "vless-03-Poland-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
       "tag": "direct",
       "protocol": "freedom",
       "settings": {}
@@ -75,7 +181,7 @@
         "strategy": {
           "type": "leastPing"
         },
-        "fallbackTag": "direct"
+        "fallbackTag": "vless-01-CIDR"
       }
     ],
     "rules": [
