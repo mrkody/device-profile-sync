@@ -39,79 +39,6 @@
   ],
   "outbounds": [
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "46.243.234.143",
-            "port": 2053,
-            "users": [
-              {
-                "id": "9d635464-57dc-4bac-a1be-dd731d74ed06",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "serviceName": "grpc-wl"
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "5post-gate.x5.ru",
-          "fingerprint": "chrome",
-          "publicKey": "EtfCxtqZmJ_cNs8Q02ZLuiHFoH7o7DogIcMSQjuuAiI",
-          "shortId": "346951f93706f6ec"
-        }
-      },
-      "tag": "vless-01-Germany-CIDR-CDN",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "958fbe5d.site",
-            "port": 443,
-            "users": [
-              {
-                "id": "efbfea27-dfb8-4414-878c-a2c2b87ff9fc",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "max.ru",
-          "fingerprint": "chrome",
-          "publicKey": "lkM6TUAgqgOYUcsnl6rycqfaL-GNYZyyEI3Zfu9-21s",
-          "shortId": "f2a54777ec76a14c"
-        }
-      },
-      "tag": "vless-02-Anycast-IP-CIDR",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
       "tag": "direct",
       "protocol": "freedom",
       "settings": {}
@@ -158,7 +85,7 @@
             "tolerance": 0.3
           }
         },
-        "fallbackTag": "vless-01-Germany-CIDR-CDN"
+        "fallbackTag": "direct"
       }
     ],
     "rules": [
