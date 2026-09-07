@@ -43,11 +43,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "87.242.95.198",
-            "port": 5443,
+            "address": "flarora.ferreo.sbs",
+            "port": 443,
             "users": [
               {
-                "id": "c4854b1a-ec0f-4c5e-940b-f23c8fd39253",
+                "id": "3db8407b-1f96-4b82-bfeb-55258c1e57b4",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -64,13 +64,49 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "max.ru",
+          "serverName": "flarora.ferreo.sbs",
           "fingerprint": "chrome",
-          "publicKey": "ZOhyzm2BZ0OsSTfS_zizRo8TlkXopKsyL48KiR76tj0",
-          "shortId": "6f5648b1673b8042"
+          "publicKey": "HKKWGVu7xJfscDTH_28WhqSfSnp8fA5jpj7X1eMO-mU",
+          "shortId": "1067b23f928e7618"
         }
       },
       "tag": "vless-01-Germany-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "176.124.214.116",
+            "port": 8443,
+            "users": [
+              {
+                "id": "b71637c2-94a5-49bd-8233-b4ed5e3170c3",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/images",
+          "headers": {
+            "Host": "free-ger1.wooden-table.org"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "free-ger1.wooden-table.org",
+          "fingerprint": "chrome"
+        }
+      },
+      "tag": "vless-02-Germany-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -108,7 +144,7 @@
           "shortId": "803c4bb737a161c0"
         }
       },
-      "tag": "vless-02-Finland-CIDR",
+      "tag": "vless-03-Finland-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -143,41 +179,7 @@
           "shortId": "bad5722c72a0"
         }
       },
-      "tag": "vless-03-Finland-CIDR",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "84.201.142.221",
-            "port": 33743,
-            "users": [
-              {
-                "id": "b3a11068-1a7e-4643-85de-7c82cce46943",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "serviceName": "TunService"
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.google.com",
-          "fingerprint": "chrome",
-          "publicKey": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY"
-        }
-      },
-      "tag": "vless-04-Poland-CIDR-YA",
+      "tag": "vless-04-Finland-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
