@@ -43,34 +43,29 @@
       "settings": {
         "vnext": [
           {
-            "address": "flarora.ferreo.sbs",
+            "address": "95.163.214.43",
             "port": 443,
             "users": [
               {
-                "id": "3db8407b-1f96-4b82-bfeb-55258c1e57b4",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "88ce17fc-7c6c-43a7-98a4-33fb59697b17",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
+        "network": "xhttp",
         "security": "reality",
         "realitySettings": {
-          "serverName": "flarora.ferreo.sbs",
+          "serverName": "ok.ru",
           "fingerprint": "chrome",
-          "publicKey": "HKKWGVu7xJfscDTH_28WhqSfSnp8fA5jpj7X1eMO-mU",
-          "shortId": "1067b23f928e7618"
+          "publicKey": "VdG4ntV15FfNWV4rvSny2mvOTSXfOUVKHNC0dOyXY2s",
+          "shortId": "864fbb122f15b43d",
+          "spiderX": "/"
         }
       },
-      "tag": "vless-01-CIDR",
+      "tag": "vless-01-CIDR-VK",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -81,34 +76,32 @@
       "settings": {
         "vnext": [
           {
-            "address": "80.249.144.234",
+            "address": "83.147.255.88",
             "port": 443,
             "users": [
               {
-                "id": "9737cc16-7266-45ce-94d9-6e05a45e0b9c",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "56cba26b-efcb-40d0-838a-d66df2dd516f",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
+        "network": "ws",
+        "wsSettings": {
+          "path": "/proxyip=tw.william.us.ci?uuid=82bc2875-3fee-49d1-ab29-e108a7b1e5f9",
+          "headers": {
+            "Host": "sni.868001.xyz"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ch.nightproducts.ru",
-          "fingerprint": "chrome",
-          "publicKey": "F0qiIYc2oh4Y7T_JM6WPIk_FbL79iOWBoIsmJGFuqyY",
-          "shortId": "4e33be95ff68e7fc"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "sni.868001.xyz",
+          "fingerprint": "chrome"
         }
       },
-      "tag": "vless-02-Czechia-CIDR",
+      "tag": "vless-02-Anycast-IP-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -161,7 +154,7 @@
             "tolerance": 0.3
           }
         },
-        "fallbackTag": "vless-01-CIDR"
+        "fallbackTag": "vless-01-CIDR-VK"
       }
     ],
     "rules": [
