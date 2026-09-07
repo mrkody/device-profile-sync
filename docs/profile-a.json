@@ -43,34 +43,31 @@
       "settings": {
         "vnext": [
           {
-            "address": "cdn5.cloud-vk.com",
+            "address": "91.215.40.6",
             "port": 443,
             "users": [
               {
-                "id": "b2965434-9d33-4eb7-b463-d1043e39092f",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": ""
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "grpc"
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "m.vk.com",
+          "serverName": "id.dframe.app",
           "fingerprint": "chrome",
-          "publicKey": "4Z1HpHko94l9nZW0Gbn22VSwb8DexIzNPjHehOALfWM",
-          "shortId": "b23516"
+          "publicKey": "ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk",
+          "shortId": "5c766813929a1fdd"
         }
       },
-      "tag": "vless-01-Hungary-CIDR",
+      "tag": "vless-01-Estonia-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -81,34 +78,32 @@
       "settings": {
         "vnext": [
           {
-            "address": "178.72.141.199",
-            "port": 443,
+            "address": "asd.coteite.pro",
+            "port": 14443,
             "users": [
               {
-                "id": "b2965434-9d33-4eb7-b463-d1043e39092f",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "02f3a6a2-289e-4026-8e26-616d47e0914f",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
+        "network": "ws",
+        "wsSettings": {
+          "path": "/tzws",
+          "headers": {
+            "Host": "asd.coteite.pro"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "m.vk.com",
-          "fingerprint": "chrome",
-          "publicKey": "4Z1HpHko94l9nZW0Gbn22VSwb8DexIzNPjHehOALfWM",
-          "shortId": "b23516"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "asd.coteite.pro",
+          "fingerprint": "chrome"
         }
       },
-      "tag": "vless-02-Hungary-CIDR",
+      "tag": "vless-02-The-Netherlands-CIDR-VK",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -161,7 +156,7 @@
             "tolerance": 0.3
           }
         },
-        "fallbackTag": "vless-01-Hungary-CIDR"
+        "fallbackTag": "vless-01-Estonia-CIDR"
       }
     ],
     "rules": [
