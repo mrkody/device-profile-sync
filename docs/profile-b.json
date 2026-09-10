@@ -43,80 +43,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.192.247.146",
-            "port": 31443,
-            "users": [
-              {
-                "id": "5edbcb44-8d04-4fa7-a587-bc5d60c24ca1",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.google.com",
-          "fingerprint": "chrome",
-          "publicKey": "2L85nJmWlabsRGWcDrG968Bw-gAPk6Fl5ERJer9LYC0",
-          "shortId": "43989f5e2e34d4a8"
-        }
-      },
-      "tag": "vless-01-CIDR",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "176.124.214.116",
-            "port": 8443,
-            "users": [
-              {
-                "id": "b71637c2-94a5-49bd-8233-b4ed5e3170c3",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/images",
-          "headers": {
-            "Host": "free-ger1.wooden-table.org"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "free-ger1.wooden-table.org",
-          "fingerprint": "chrome"
-        }
-      },
-      "tag": "vless-02-Germany-CIDR",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "ru2.oshost.network",
             "port": 80,
             "users": [
@@ -135,7 +61,7 @@
         },
         "security": "none"
       },
-      "tag": "vless-03-The-Netherlands-CIDR",
+      "tag": "vless-01-The-Netherlands-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -178,7 +104,7 @@
         "strategy": {
           "type": "leastPing"
         },
-        "fallbackTag": "vless-01-CIDR"
+        "fallbackTag": "vless-01-The-Netherlands-CIDR"
       }
     ],
     "rules": [
