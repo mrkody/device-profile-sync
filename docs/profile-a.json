@@ -39,35 +39,6 @@
   ],
   "outbounds": [
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "ru2.oshost.network",
-            "port": 80,
-            "users": [
-              {
-                "id": "419f25c1-bc35-412e-93fb-258efee859b5",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/api/v2/stream"
-        },
-        "security": "none"
-      },
-      "tag": "vless-01-The-Netherlands-CIDR",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
       "tag": "direct",
       "protocol": "freedom",
       "settings": {}
@@ -114,7 +85,7 @@
             "tolerance": 0.3
           }
         },
-        "fallbackTag": "vless-01-The-Netherlands-CIDR"
+        "fallbackTag": "direct"
       }
     ],
     "rules": [
