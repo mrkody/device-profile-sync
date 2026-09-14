@@ -43,11 +43,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "89.127.197.75",
+            "address": "app.console-club.com",
             "port": 443,
             "users": [
               {
-                "id": "22723345-4e67-4ac9-a4e6-4435b9a533b7",
+                "id": "97ad0365-9197-4d44-b21b-3e2f1a23e578",
                 "encryption": "none"
               }
             ]
@@ -55,19 +55,17 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "serviceName": "grpc"
+        "network": "ws",
+        "wsSettings": {
+          "path": "/consws"
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.samsung.com",
-          "fingerprint": "edge",
-          "publicKey": "K-wTvAPoWqLXkMU1mOIwFxdOgZfiloib93AZKBIoUnQ",
-          "shortId": "6b"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "app.console-club.com",
+          "fingerprint": "chrome"
         }
       },
-      "tag": "vless-01-The-Netherlands-CIDR",
+      "tag": "vless-01-Finland-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -78,11 +76,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "89.127.197.75",
-            "port": 443,
+            "address": "212.92.101.117",
+            "port": 9894,
             "users": [
               {
-                "id": "3b17070b-6a05-42ae-b584-73b05781aad0",
+                "id": "5d16ac22-6eea-426f-b778-6f4c2961faef",
                 "encryption": "none"
               }
             ]
@@ -92,17 +90,17 @@
       "streamSettings": {
         "network": "grpc",
         "grpcSettings": {
-          "serviceName": "grpc"
+          "serviceName": "grpc-tunnel"
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "www.samsung.com",
+          "serverName": "dl.google.com",
           "fingerprint": "edge",
-          "publicKey": "K-wTvAPoWqLXkMU1mOIwFxdOgZfiloib93AZKBIoUnQ",
-          "shortId": "6b"
+          "publicKey": "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU",
+          "shortId": "aa"
         }
       },
-      "tag": "vless-02-The-Netherlands-CIDR",
+      "tag": "vless-02-France-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -113,11 +111,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "89.127.209.89",
-            "port": 443,
+            "address": "212.92.101.89",
+            "port": 9889,
             "users": [
               {
-                "id": "3e561346-4319-4c4a-9fc1-1c951c70e02c",
+                "id": "5d16ac22-6eea-426f-b778-6f4c2961faef",
                 "encryption": "none"
               }
             ]
@@ -127,17 +125,17 @@
       "streamSettings": {
         "network": "grpc",
         "grpcSettings": {
-          "serviceName": "grpc"
+          "serviceName": "grpc-tunnel"
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "www.samsung.com",
+          "serverName": "dl.google.com",
           "fingerprint": "chrome",
-          "publicKey": "hbOfuUJeZUi3UfNd9PEasFw9R0aRCt0F5NT5rdNDoTA",
+          "publicKey": "ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU",
           "shortId": "00000000"
         }
       },
-      "tag": "vless-03-The-Netherlands-CIDR",
+      "tag": "vless-03-Anycast-IP-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -148,27 +146,31 @@
       "settings": {
         "vnext": [
           {
-            "address": "ns.o11111o.club",
+            "address": "77.91.112.106",
             "port": 443,
             "users": [
               {
-                "id": "b1b3e430-ff52-44b8-b95d-27fa580fbc4f",
-                "encryption": "none"
+                "id": "259970a2-051c-4e20-9acd-79b727f37d80",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "serviceName": "vless-grpc-reality"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "id.vk.com",
+          "serverName": "ru2.paledweld.com",
           "fingerprint": "chrome",
-          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+          "publicKey": "6SHeM1vp1wm_lcalixf2z5-GHtSXjz-KJE94t7tsiX8",
+          "shortId": "fab9af9b9fd611fe"
         }
       },
       "tag": "vless-04-Anycast-IP-CIDR",
@@ -214,7 +216,7 @@
         "strategy": {
           "type": "leastPing"
         },
-        "fallbackTag": "vless-01-The-Netherlands-CIDR"
+        "fallbackTag": "vless-01-Finland-CIDR"
       }
     ],
     "rules": [
