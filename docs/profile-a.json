@@ -43,26 +43,35 @@
       "settings": {
         "vnext": [
           {
-            "address": "relay.funtime.best",
+            "address": "200.169.183.68",
             "port": 443,
             "users": [
               {
-                "id": "63502f61-5e8b-4100-8826-868856e78c53",
-                "encryption": "none"
+                "id": "a72ca3b6-1a26-47f5-aca3-039bb5539eb4",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "relay.funtime.best",
-          "fingerprint": "chrome"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "s3-m.perecmusic.ru",
+          "fingerprint": "firefox",
+          "publicKey": "b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4",
+          "shortId": "4a7b1c8d",
+          "spiderX": "/"
         }
       },
-      "tag": "vless-01-France-CIDR-YA",
+      "tag": "vless-01-Germany-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -73,11 +82,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "oblako2.thewalkingded.life",
+            "address": "72.56.250.71",
             "port": 443,
             "users": [
               {
-                "id": "fcbc0571-7b14-4699-830e-11cf3aa0ad6b",
+                "id": "af2a0c18-b08c-471f-baa3-259ac2ce3a85",
                 "encryption": "none"
               }
             ]
@@ -87,18 +96,15 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/wsline",
-          "headers": {
-            "Host": "oblako2.thewalkingded.life"
-          }
+          "path": "/"
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "oblako2.thewalkingded.life",
-          "fingerprint": "firefox"
+          "serverName": "tr3.wba-pn.ru",
+          "fingerprint": "chrome"
         }
       },
-      "tag": "vless-02-United-Kingdom-CIDR",
+      "tag": "vless-02-Turkey-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -109,11 +115,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "relay.funtime.best",
-            "port": 2096,
+            "address": "45.8.228.167",
+            "port": 443,
             "users": [
               {
-                "id": "63502f61-5e8b-4100-8826-868856e78c53",
+                "id": "953358cb-82ba-4296-960d-6d2ec3468f4c",
                 "encryption": "none"
               }
             ]
@@ -122,48 +128,15 @@
       },
       "streamSettings": {
         "network": "xhttp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "relay.funtime.best",
-          "fingerprint": "chrome"
-        }
-      },
-      "tag": "vless-03-United-Kingdom-CIDR-YA",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "31.184.219.147",
-            "port": 9872,
-            "users": [
-              {
-                "id": "5d16ac22-6eea-426f-b778-6f4c2961faef",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "serviceName": "grpc-tunnel"
-        },
         "security": "reality",
         "realitySettings": {
-          "serverName": "dl.google.com",
+          "serverName": "dailycanvas.sysopnova.art",
           "fingerprint": "chrome",
-          "publicKey": "sm3E3hjmT6_Gmg_O9rBz4nfXYrHpnl6-LvcCp6T6_xc",
-          "shortId": "aa"
+          "publicKey": "n7Eivi9aG8PMxvaP5flLiukPADZIDVuzyOsOWDG43kQ",
+          "shortId": "5eca"
         }
       },
-      "tag": "vless-04-Sweden-CIDR",
+      "tag": "vless-03-Anycast-IP-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -216,7 +189,7 @@
             "tolerance": 0.3
           }
         },
-        "fallbackTag": "vless-01-France-CIDR-YA"
+        "fallbackTag": "vless-01-Germany-CIDR"
       }
     ],
     "rules": [
