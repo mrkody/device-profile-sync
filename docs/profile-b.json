@@ -43,11 +43,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "dzen-ru-1.com",
+            "address": "72.56.38.83",
             "port": 443,
             "users": [
               {
-                "id": "bcb5a897-8cc4-4e21-ad96-c82fb3a9d72a",
+                "id": "Fluffy_VPN-zKZUa4Ie",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -64,73 +64,12 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "dzen-ru-1.com",
+          "serverName": "absolute-disaster.org",
           "fingerprint": "chrome",
-          "publicKey": "9F7JxyyP-TNLt0dY2xOB0_34I8W0xXIpFY7rZ7-L0Gg",
-          "shortId": "19aa22f681923dc8"
+          "publicKey": "ZzIetLcQtENjIXQ9XZqFo8p3J81p8Emj0wi51Uy07n8"
         }
       },
       "tag": "vless-01-CIDR",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "107.150.93.2",
-            "port": 443,
-            "users": [
-              {
-                "id": "6a32736d-4b7f-4c35-a1cf-4489d49f2cfb",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "6a32736d.ferrin.uk",
-          "fingerprint": "edge"
-        }
-      },
-      "tag": "vless-02-Finland-CIDR",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "107.150.93.51",
-            "port": 443,
-            "users": [
-              {
-                "id": "6a32736d-4b7f-4c35-a1cf-4489d49f2cfb",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "6a32736d.ferrin.uk",
-          "fingerprint": "chrome"
-        }
-      },
-      "tag": "vless-03-Finland-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -160,7 +99,7 @@
           "fingerprint": "chrome"
         }
       },
-      "tag": "vless-04-Finland-CIDR",
+      "tag": "vless-02-Finland-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -175,7 +114,7 @@
             "port": 443,
             "users": [
               {
-                "id": "4992470d-03aa-4422-aa74-f749c547c023",
+                "id": "c748ab70-a175-4ff3-94e6-5b7090f6c891",
                 "encryption": "none"
               }
             ]
@@ -196,7 +135,102 @@
           "fingerprint": "chrome"
         }
       },
-      "tag": "vless-05-Sweden-CIDR",
+      "tag": "vless-03-Sweden-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "94.228.166.164",
+            "port": 463,
+            "users": [
+              {
+                "id": "a82aa132-5ccc-4b3d-a219-bfd8a1993d59",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "google.android.location.SyncService"
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "yandex.ru",
+          "fingerprint": "chrome",
+          "publicKey": "2LhhfOTB7zeLJ-0s9aGNkISP3MmC2EV7odwrSVcdQww",
+          "shortId": "53c7983cfd"
+        }
+      },
+      "tag": "vless-04-United-States-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "107.150.93.2",
+            "port": 443,
+            "users": [
+              {
+                "id": "6a32736d-4b7f-4c35-a1cf-4489d49f2cfb",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "6a32736d.ferrin.uk",
+          "fingerprint": "edge"
+        }
+      },
+      "tag": "vless-05-Anycast-IP-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "107.150.93.51",
+            "port": 443,
+            "users": [
+              {
+                "id": "6a32736d-4b7f-4c35-a1cf-4489d49f2cfb",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "6a32736d.ferrin.uk",
+          "fingerprint": "chrome"
+        }
+      },
+      "tag": "vless-06-Anycast-IP-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
