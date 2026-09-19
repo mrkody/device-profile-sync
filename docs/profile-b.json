@@ -39,6 +39,170 @@
   ],
   "outbounds": [
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "dzen-ru-1.com",
+            "port": 443,
+            "users": [
+              {
+                "id": "bcb5a897-8cc4-4e21-ad96-c82fb3a9d72a",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "dzen-ru-1.com",
+          "fingerprint": "chrome",
+          "publicKey": "9F7JxyyP-TNLt0dY2xOB0_34I8W0xXIpFY7rZ7-L0Gg",
+          "shortId": "19aa22f681923dc8"
+        }
+      },
+      "tag": "vless-01-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "107.150.93.2",
+            "port": 443,
+            "users": [
+              {
+                "id": "6a32736d-4b7f-4c35-a1cf-4489d49f2cfb",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "6a32736d.ferrin.uk",
+          "fingerprint": "edge"
+        }
+      },
+      "tag": "vless-02-Finland-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "107.150.93.51",
+            "port": 443,
+            "users": [
+              {
+                "id": "6a32736d-4b7f-4c35-a1cf-4489d49f2cfb",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "6a32736d.ferrin.uk",
+          "fingerprint": "chrome"
+        }
+      },
+      "tag": "vless-03-Finland-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "fi.alpheratzz.org",
+            "port": 443,
+            "users": [
+              {
+                "id": "6a32736d-4b7f-4c35-a1cf-4489d49f2cfb",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "6a32736d.ferrin.uk",
+          "fingerprint": "chrome"
+        }
+      },
+      "tag": "vless-04-Finland-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "95.129.236.239",
+            "port": 443,
+            "users": [
+              {
+                "id": "4992470d-03aa-4422-aa74-f749c547c023",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/stream/615428/socket",
+          "headers": {
+            "Host": "wiki.solarinfra.net"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "wiki.solarinfra.net",
+          "fingerprint": "chrome"
+        }
+      },
+      "tag": "vless-05-Sweden-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
       "tag": "direct",
       "protocol": "freedom",
       "settings": {}
@@ -75,7 +239,7 @@
         "strategy": {
           "type": "leastPing"
         },
-        "fallbackTag": "direct"
+        "fallbackTag": "vless-01-CIDR"
       }
     ],
     "rules": [
