@@ -39,6 +39,112 @@
   ],
   "outbounds": [
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "tt.sonyabibboop.com",
+            "port": 2055,
+            "users": [
+              {
+                "id": "884b5fb5-13b5-433a-92cc-0ff4e5773375",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "sonya-grpc"
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "tt.sonyabibboop.com",
+          "fingerprint": "chrome",
+          "publicKey": "2C-oK3mN8pZ8jeTAVhgt6ubT-xqL7cklq9QmwtBY9mE",
+          "shortId": "7b86a01d952e8df4"
+        }
+      },
+      "tag": "vless-01-Finland-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "tt.sonyabibboop.com",
+            "port": 443,
+            "users": [
+              {
+                "id": "884b5fb5-13b5-433a-92cc-0ff4e5773375",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "tt.sonyabibboop.com",
+          "fingerprint": "firefox",
+          "publicKey": "2C-oK3mN8pZ8jeTAVhgt6ubT-xqL7cklq9QmwtBY9mE",
+          "shortId": "7b86a01d952e8df4"
+        }
+      },
+      "tag": "vless-02-Finland-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "186.246.2.254",
+            "port": 6443,
+            "users": [
+              {
+                "id": "ae8e2b94-5d44-437b-9002-80c2015f0e23",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "media.playback.v1.SessionGateway"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "nld.centermass.net",
+          "fingerprint": "chrome"
+        }
+      },
+      "tag": "vless-03-The-Netherlands-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
       "tag": "direct",
       "protocol": "freedom",
       "settings": {}
@@ -85,7 +191,7 @@
             "tolerance": 0.3
           }
         },
-        "fallbackTag": "direct"
+        "fallbackTag": "vless-01-Finland-CIDR"
       }
     ],
     "rules": [
