@@ -65,7 +65,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "absolute-disaster.org",
-          "fingerprint": "edge",
+          "fingerprint": "firefox",
           "publicKey": "ZzIetLcQtENjIXQ9XZqFo8p3J81p8Emj0wi51Uy07n8"
         }
       },
@@ -110,43 +110,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.8.228.167",
-            "port": 443,
-            "users": [
-              {
-                "id": "953358cb-82ba-4296-960d-6d2ec3468f4c",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "dailycanvas.sysopnova.art",
-          "fingerprint": "chrome",
-          "publicKey": "n7Eivi9aG8PMxvaP5flLiukPADZIDVuzyOsOWDG43kQ",
-          "shortId": "5eca"
-        }
-      },
-      "tag": "vless-03-Italy-CIDR",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "95.129.236.239",
             "port": 443,
             "users": [
               {
-                "id": "5f639cd9-3278-42e8-937a-f582ddde2f92",
+                "id": "ab1ba7a1-1332-44ab-bda6-fe45c1f01430",
                 "encryption": "none"
               }
             ]
@@ -167,7 +135,7 @@
           "fingerprint": "chrome"
         }
       },
-      "tag": "vless-04-Sweden-CIDR",
+      "tag": "vless-03-Sweden-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -197,7 +165,7 @@
           "fingerprint": "edge"
         }
       },
-      "tag": "vless-05-Anycast-IP-CIDR",
+      "tag": "vless-04-Anycast-IP-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -227,7 +195,7 @@
           "fingerprint": "chrome"
         }
       },
-      "tag": "vless-06-Anycast-IP-CIDR",
+      "tag": "vless-05-Anycast-IP-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -238,32 +206,32 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.186.143.76",
-            "port": 443,
+            "address": "66.90.90.13",
+            "port": 8443,
             "users": [
               {
-                "id": "528c9248-7b50-45fb-9188-e46d889dafe6",
-                "encryption": "none"
+                "id": "151077fd-f4a0-4622-bfd2-1ee2c121a544",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "serviceName": "grpc"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ru-kitchen.ru",
-          "fingerprint": "chrome",
-          "publicKey": "6vDdlh4aAipoRQ-IXDjzTUtKpZS09xtNXIisCa__2CM",
-          "shortId": "f74c6a18133e2e72",
-          "spiderX": "/"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "dsapi-v2-6aaeee8a.adhil.uk",
+          "fingerprint": "firefox"
         }
       },
-      "tag": "vless-07-Anycast-IP-CIDR",
+      "tag": "vless-06-Anycast-IP-CIDR-Beeline",
       "mux": {
         "enabled": false,
         "concurrency": 8
