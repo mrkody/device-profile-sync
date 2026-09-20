@@ -43,11 +43,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "107.150.93.51",
-            "port": 443,
+            "address": "89.125.214.154",
+            "port": 8444,
             "users": [
               {
-                "id": "6a32736d-4b7f-4c35-a1cf-4489d49f2cfb",
+                "id": "82719790-ff61-4284-8668-ba140a4d6cbd",
                 "encryption": "none"
               }
             ]
@@ -55,14 +55,19 @@
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "6a32736d.ferrin.uk",
-          "fingerprint": "chrome"
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "grpc-de-grpc"
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "vk.ru",
+          "fingerprint": "chrome",
+          "publicKey": "O4ymaaoTi3woCs3MWktyrXKhlU5RCK1Wo0G_T0u_Vi4",
+          "shortId": "5db60b1f"
         }
       },
-      "tag": "vless-01-Finland-CIDR",
+      "tag": "vless-01-Czechia-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -73,11 +78,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "fi.alpheratzz.org",
+            "address": "45.8.228.167",
             "port": 443,
             "users": [
               {
-                "id": "6a32736d-4b7f-4c35-a1cf-4489d49f2cfb",
+                "id": "953358cb-82ba-4296-960d-6d2ec3468f4c",
                 "encryption": "none"
               }
             ]
@@ -86,13 +91,15 @@
       },
       "streamSettings": {
         "network": "xhttp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "6a32736d.ferrin.uk",
-          "fingerprint": "chrome"
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "bl3fk52.sysopnova.art",
+          "fingerprint": "edge",
+          "publicKey": "n7Eivi9aG8PMxvaP5flLiukPADZIDVuzyOsOWDG43kQ",
+          "shortId": "5eca"
         }
       },
-      "tag": "vless-02-Finland-CIDR",
+      "tag": "vless-02-Italy-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -145,7 +152,7 @@
             "tolerance": 0.3
           }
         },
-        "fallbackTag": "vless-01-Finland-CIDR"
+        "fallbackTag": "vless-01-Czechia-CIDR"
       }
     ],
     "rules": [
