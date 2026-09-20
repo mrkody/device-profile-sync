@@ -43,11 +43,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "tt.sonyabibboop.com",
-            "port": 2055,
+            "address": "45.8.228.167",
+            "port": 443,
             "users": [
               {
-                "id": "884b5fb5-13b5-433a-92cc-0ff4e5773375",
+                "id": "953358cb-82ba-4296-960d-6d2ec3468f4c",
                 "encryption": "none"
               }
             ]
@@ -55,19 +55,16 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "serviceName": "sonya-grpc"
-        },
+        "network": "xhttp",
         "security": "reality",
         "realitySettings": {
-          "serverName": "tt.sonyabibboop.com",
-          "fingerprint": "chrome",
-          "publicKey": "2C-oK3mN8pZ8jeTAVhgt6ubT-xqL7cklq9QmwtBY9mE",
-          "shortId": "7b86a01d952e8df4"
+          "serverName": "bl3fk52.sysopnova.art",
+          "fingerprint": "edge",
+          "publicKey": "n7Eivi9aG8PMxvaP5flLiukPADZIDVuzyOsOWDG43kQ",
+          "shortId": "5eca"
         }
       },
-      "tag": "vless-01-Finland-CIDR",
+      "tag": "vless-01-Italy-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -78,11 +75,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "tt.sonyabibboop.com",
+            "address": "prayercurerecall.forumsociety.info",
             "port": 443,
             "users": [
               {
-                "id": "884b5fb5-13b5-433a-92cc-0ff4e5773375",
+                "id": "f07d9192-9d39-49fc-ba70-610fcb7fb176",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -99,13 +96,13 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "tt.sonyabibboop.com",
+          "serverName": "prayercurerecall.forumsociety.info",
           "fingerprint": "firefox",
-          "publicKey": "2C-oK3mN8pZ8jeTAVhgt6ubT-xqL7cklq9QmwtBY9mE",
-          "shortId": "7b86a01d952e8df4"
+          "publicKey": "Nn9qoyJqjiJH-PliIjmy8lPtl0mIo52B3p6AeWsHQT4",
+          "shortId": "9d9d411dbf0c1130"
         }
       },
-      "tag": "vless-02-Finland-CIDR",
+      "tag": "vless-02-The-Netherlands-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -116,11 +113,49 @@
       "settings": {
         "vnext": [
           {
-            "address": "186.246.2.254",
-            "port": 6443,
+            "address": "decreecompanysplashy.ingotbindery.org",
+            "port": 443,
             "users": [
               {
-                "id": "ae8e2b94-5d44-437b-9002-80c2015f0e23",
+                "id": "f07d9192-9d39-49fc-ba70-610fcb7fb176",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "decreecompanysplashy.ingotbindery.org",
+          "fingerprint": "chrome",
+          "publicKey": "hAq-OUfI1pdzzL507dRBuLzB9Yqp7ZOAUa7JH5Hdzx0",
+          "shortId": "5ff0edabd9e54227"
+        }
+      },
+      "tag": "vless-03-Sweden-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "95.129.236.239",
+            "port": 443,
+            "users": [
+              {
+                "id": "5fe7036c-e9ef-4dfa-aa19-8db2b3d592c9",
                 "encryption": "none"
               }
             ]
@@ -128,17 +163,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "serviceName": "media.playback.v1.SessionGateway"
+        "network": "ws",
+        "wsSettings": {
+          "path": "/stream/615428/socket",
+          "headers": {
+            "Host": "wiki.solarinfra.net"
+          }
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "nld.centermass.net",
+          "serverName": "wiki.solarinfra.net",
           "fingerprint": "chrome"
         }
       },
-      "tag": "vless-03-The-Netherlands-CIDR",
+      "tag": "vless-04-Anycast-IP-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -191,7 +229,7 @@
             "tolerance": 0.3
           }
         },
-        "fallbackTag": "vless-01-Finland-CIDR"
+        "fallbackTag": "vless-01-Italy-CIDR"
       }
     ],
     "rules": [
