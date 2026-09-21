@@ -39,62 +39,21 @@
   ],
   "outbounds": [
     {
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "51.250.106.197",
-            "port": 443,
-            "users": [
-              {
-                "id": "06ec3898-f952-52a5-8547-51ae1e6f0a62",
-                "encryption": "none"
-              }
-            ]
+            "address": "213.171.27.80",
+            "port": 37490,
+            "password": "wYQ9WYorgO"
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "max.ru",
-          "fingerprint": "chrome",
-          "publicKey": "LGSiGIQDFwB3IgQw8IBEsI5qfQoPQRSeUZWofnEu00U"
-        }
+        "network": "raw",
+        "security": "none"
       },
-      "tag": "vless-01-CIDR-YA",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "51.250.106.197",
-            "port": 443,
-            "users": [
-              {
-                "id": "Fluffy_VPN-Oth8rOq3",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "max.ru",
-          "fingerprint": "chrome",
-          "publicKey": "LGSiGIQDFwB3IgQw8IBEsI5qfQoPQRSeUZWofnEu00U"
-        }
-      },
-      "tag": "vless-02-CIDR-YA",
+      "tag": "vless-01-Hong-Kong-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -147,7 +106,7 @@
             "tolerance": 0.3
           }
         },
-        "fallbackTag": "vless-01-CIDR-YA"
+        "fallbackTag": "vless-01-Hong-Kong-CIDR"
       }
     ],
     "rules": [
