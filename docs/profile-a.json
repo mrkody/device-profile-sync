@@ -39,6 +39,68 @@
   ],
   "outbounds": [
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "51.250.106.197",
+            "port": 443,
+            "users": [
+              {
+                "id": "06ec3898-f952-52a5-8547-51ae1e6f0a62",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "max.ru",
+          "fingerprint": "chrome",
+          "publicKey": "LGSiGIQDFwB3IgQw8IBEsI5qfQoPQRSeUZWofnEu00U"
+        }
+      },
+      "tag": "vless-01-CIDR-YA",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "51.250.106.197",
+            "port": 443,
+            "users": [
+              {
+                "id": "Fluffy_VPN-Oth8rOq3",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "max.ru",
+          "fingerprint": "chrome",
+          "publicKey": "LGSiGIQDFwB3IgQw8IBEsI5qfQoPQRSeUZWofnEu00U"
+        }
+      },
+      "tag": "vless-02-CIDR-YA",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
       "tag": "direct",
       "protocol": "freedom",
       "settings": {}
@@ -85,7 +147,7 @@
             "tolerance": 0.3
           }
         },
-        "fallbackTag": "direct"
+        "fallbackTag": "vless-01-CIDR-YA"
       }
     ],
     "rules": [
