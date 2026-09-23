@@ -39,6 +39,39 @@
   ],
   "outbounds": [
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "dostavitos.stroymatdv.cc",
+            "port": 443,
+            "users": [
+              {
+                "id": "365de9e9-ba29-4819-af2d-766f9638e3be",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/e9ws"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "dostavitos.stroymatdv.cc",
+          "fingerprint": "chrome"
+        }
+      },
+      "tag": "vless-01-Germany-CIDR-VK",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
       "tag": "direct",
       "protocol": "freedom",
       "settings": {}
@@ -85,7 +118,7 @@
             "tolerance": 0.3
           }
         },
-        "fallbackTag": "direct"
+        "fallbackTag": "vless-01-Germany-CIDR-VK"
       }
     ],
     "rules": [
