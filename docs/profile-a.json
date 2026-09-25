@@ -43,43 +43,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "193.233.223.185",
-            "port": 50443,
-            "users": [
-              {
-                "id": "7e5fa3a3-e085-441d-8322-0411711dd648",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.icloud.com",
-          "fingerprint": "edge",
-          "publicKey": "hp9ht_jsxocTnQEbChb1G3JoDF50x-xDT8UYr66D1TQ"
-        }
-      },
-      "tag": "vless-01-CIDR",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "37.139.42.138",
             "port": 443,
             "users": [
@@ -102,7 +65,7 @@
           "fingerprint": "chrome"
         }
       },
-      "tag": "vless-02-Germany-CIDR-VK",
+      "tag": "vless-01-Germany-CIDR-VK",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -135,39 +98,7 @@
           "fingerprint": "chrome"
         }
       },
-      "tag": "vless-03-Germany-CIDR-VK",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "45.8.228.167",
-            "port": 443,
-            "users": [
-              {
-                "id": "953358cb-82ba-4296-960d-6d2ec3468f4c",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "pl314j2.sysopnova.art",
-          "fingerprint": "chrome",
-          "publicKey": "n7Eivi9aG8PMxvaP5flLiukPADZIDVuzyOsOWDG43kQ",
-          "shortId": "5eca"
-        }
-      },
-      "tag": "vless-04-Italy-CIDR",
+      "tag": "vless-02-Germany-CIDR-VK",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -220,7 +151,7 @@
             "tolerance": 0.3
           }
         },
-        "fallbackTag": "vless-01-CIDR"
+        "fallbackTag": "vless-01-Germany-CIDR-VK"
       }
     ],
     "rules": [
