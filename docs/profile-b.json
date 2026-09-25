@@ -43,63 +43,33 @@
       "settings": {
         "vnext": [
           {
-            "address": "176.123.167.90",
-            "port": 9881,
+            "address": "193.233.223.185",
+            "port": 50443,
             "users": [
               {
-                "id": "5d16ac22-6eea-426f-b778-6f4c2961faef",
-                "encryption": "none"
+                "id": "7e5fa3a3-e085-441d-8322-0411711dd648",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "serviceName": "grpc-tunnel"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "dl.google.com",
-          "fingerprint": "chrome",
-          "publicKey": "Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0",
-          "shortId": "aabb"
+          "serverName": "www.icloud.com",
+          "fingerprint": "edge",
+          "publicKey": "hp9ht_jsxocTnQEbChb1G3JoDF50x-xDT8UYr66D1TQ"
         }
       },
       "tag": "vless-01-CIDR",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "ru19.aimodelhub.top",
-            "port": 443,
-            "users": [
-              {
-                "id": "13ef8e97-815a-000b-8688-0154d85d26bf",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ru19.aimodelhub.top",
-          "fingerprint": "firefox",
-          "publicKey": "Fe5PnOaERhhHbBXhGBEsQaRUBpSM8hCc03zOEpHz218",
-          "shortId": "51b784e13468"
-        }
-      },
-      "tag": "vless-02-Switzerland-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -132,7 +102,7 @@
           "fingerprint": "chrome"
         }
       },
-      "tag": "vless-03-Germany-CIDR-VK",
+      "tag": "vless-02-Germany-CIDR-VK",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -165,7 +135,7 @@
           "fingerprint": "chrome"
         }
       },
-      "tag": "vless-04-Germany-CIDR-VK",
+      "tag": "vless-03-Germany-CIDR-VK",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -176,11 +146,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "92.255.79.246",
+            "address": "45.8.228.167",
             "port": 443,
             "users": [
               {
-                "id": "8057eabc-921d-0004-9acb-80ccc6b48379",
+                "id": "953358cb-82ba-4296-960d-6d2ec3468f4c",
                 "encryption": "none"
               }
             ]
@@ -188,229 +158,16 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "serviceName": "Lizat",
-          "multiMode": true
-        },
+        "network": "xhttp",
         "security": "reality",
         "realitySettings": {
-          "serverName": "download.amd.com",
-          "fingerprint": "edge",
-          "publicKey": "8P2rVrZZ8v1q7WpYiRWnZ_nk2UI_4PqpN_DdZP91700"
-        }
-      },
-      "tag": "vless-05-Germany-CIDR",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "92.255.79.246",
-            "port": 443,
-            "users": [
-              {
-                "id": "8057eabc-921d-0005-9acb-80ccc6b48379",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "serviceName": "Lizat",
-          "multiMode": true
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "download.amd.com",
+          "serverName": "pl314j2.sysopnova.art",
           "fingerprint": "chrome",
-          "publicKey": "8P2rVrZZ8v1q7WpYiRWnZ_nk2UI_4PqpN_DdZP91700"
+          "publicKey": "n7Eivi9aG8PMxvaP5flLiukPADZIDVuzyOsOWDG43kQ",
+          "shortId": "5eca"
         }
       },
-      "tag": "vless-06-Germany-CIDR",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "92.255.79.246",
-            "port": 443,
-            "users": [
-              {
-                "id": "8057eabc-921d-0006-9acb-80ccc6b48379",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "serviceName": "Lizat",
-          "multiMode": true
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "download.amd.com",
-          "fingerprint": "firefox",
-          "publicKey": "8P2rVrZZ8v1q7WpYiRWnZ_nk2UI_4PqpN_DdZP91700"
-        }
-      },
-      "tag": "vless-07-Estonia-CIDR",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "92.255.79.246",
-            "port": 443,
-            "users": [
-              {
-                "id": "8057eabc-921d-0001-9acb-80ccc6b48379",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "serviceName": "Lizat",
-          "multiMode": true
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "download.amd.com",
-          "fingerprint": "edge",
-          "publicKey": "8P2rVrZZ8v1q7WpYiRWnZ_nk2UI_4PqpN_DdZP91700"
-        }
-      },
-      "tag": "vless-08-Finland-CIDR",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "92.255.79.246",
-            "port": 443,
-            "users": [
-              {
-                "id": "8057eabc-921d-0002-9acb-80ccc6b48379",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "serviceName": "Lizat",
-          "multiMode": true
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "download.amd.com",
-          "fingerprint": "safari",
-          "publicKey": "8P2rVrZZ8v1q7WpYiRWnZ_nk2UI_4PqpN_DdZP91700"
-        }
-      },
-      "tag": "vless-09-Finland-CIDR",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "92.255.79.246",
-            "port": 443,
-            "users": [
-              {
-                "id": "8057eabc-921d-0007-9acb-80ccc6b48379",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "serviceName": "Lizat",
-          "multiMode": true
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "download.amd.com",
-          "fingerprint": "chrome",
-          "publicKey": "8P2rVrZZ8v1q7WpYiRWnZ_nk2UI_4PqpN_DdZP91700"
-        }
-      },
-      "tag": "vless-10-Sweden-CIDR",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "92.255.79.246",
-            "port": 443,
-            "users": [
-              {
-                "id": "8057eabc-921d-0003-9acb-80ccc6b48379",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "serviceName": "Lizat",
-          "multiMode": true
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "download.amd.com",
-          "fingerprint": "edge",
-          "publicKey": "8P2rVrZZ8v1q7WpYiRWnZ_nk2UI_4PqpN_DdZP91700"
-        }
-      },
-      "tag": "vless-11-Anycast-IP-CIDR",
+      "tag": "vless-04-Italy-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
