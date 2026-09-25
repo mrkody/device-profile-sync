@@ -43,29 +43,34 @@
       "settings": {
         "vnext": [
           {
-            "address": "37.139.42.138",
+            "address": "82.97.253.254",
             "port": 443,
             "users": [
               {
-                "id": "365de9e9-ba29-4819-af2d-766f9638e3be",
-                "encryption": "none"
+                "id": "cb9bc521-77a2-4c23-9bbf-b8d5318e717d",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/e9ws"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "dostavitos.stroymatdv.cc",
-          "fingerprint": "chrome"
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "duckduckgo.com",
+          "fingerprint": "chrome",
+          "publicKey": "IxFbqmfuwejYSKYu69qBnzG9yWSuf7UjHujXWOO_w34",
+          "shortId": "9137d914cd770b54"
         }
       },
-      "tag": "vless-01-Germany-CIDR-VK",
+      "tag": "vless-01-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -109,6 +114,42 @@
       "settings": {
         "vnext": [
           {
+            "address": "37.139.42.138",
+            "port": 443,
+            "users": [
+              {
+                "id": "365de9e9-ba29-4819-af2d-766f9638e3be",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/e9ws",
+          "headers": {
+            "Host": "dostavitos.stroymatdv.cc"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "dostavitos.stroymatdv.cc",
+          "fingerprint": "chrome"
+        }
+      },
+      "tag": "vless-03-Germany-CIDR-VK",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "176.123.167.90",
             "port": 9881,
             "users": [
@@ -128,12 +169,12 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "dl.google.com",
-          "fingerprint": "firefox",
+          "fingerprint": "chrome",
           "publicKey": "Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0",
-          "shortId": "aabb"
+          "shortId": "aa"
         }
       },
-      "tag": "vless-03-United-Kingdom-CIDR",
+      "tag": "vless-04-United-Kingdom-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -186,7 +227,7 @@
             "tolerance": 0.3
           }
         },
-        "fallbackTag": "vless-01-Germany-CIDR-VK"
+        "fallbackTag": "vless-01-CIDR"
       }
     ],
     "rules": [
