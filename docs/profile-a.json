@@ -43,11 +43,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "5.42.114.41",
-            "port": 9892,
+            "address": "84.38.181.249",
+            "port": 443,
             "users": [
               {
-                "id": "5d16ac22-6eea-426f-b778-6f4c2961faef",
+                "id": "9737cc16-7266-45ce-94d9-6e05a45e0b9c",
                 "encryption": "none"
               }
             ]
@@ -55,18 +55,16 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "serviceName": "grpc-tunnel"
-        },
+        "network": "xhttp",
         "security": "reality",
         "realitySettings": {
-          "serverName": "dl.google.com",
-          "fingerprint": "chrome",
-          "publicKey": "Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0"
+          "serverName": "open.spotify.com",
+          "fingerprint": "edge",
+          "publicKey": "pyZ0M0nE3aGx2UtCXNhajcneyCF4E8J3zpxhIKkQw0w",
+          "shortId": "6bc02f1c474260c3"
         }
       },
-      "tag": "vless-01-CIDR",
+      "tag": "vless-01-United-Kingdom-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -77,12 +75,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "vless.proxyuniverse.online",
-            "port": 11001,
+            "address": "84.201.171.120",
+            "port": 443,
             "users": [
               {
-                "id": "b370af1d-8f14-4113-a8a7-550b20503f16",
-                "encryption": "none"
+                "id": "33938142-2f48-48a3-9180-28476cf586f4",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
@@ -95,9 +94,15 @@
             "type": "none"
           }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "event.yandex.ru",
+          "fingerprint": "chrome",
+          "publicKey": "H0XNnzA2Re28xPPGvcb0TVIuggmZDekxaCoTP_8RFSo",
+          "shortId": "26dbb2b4e635"
+        }
       },
-      "tag": "vless-02-Canada-CIDR",
+      "tag": "vless-02-Singapore-CIDR-YA",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -186,7 +191,7 @@
             "tolerance": 0.3
           }
         },
-        "fallbackTag": "vless-01-CIDR"
+        "fallbackTag": "vless-01-United-Kingdom-CIDR"
       }
     ],
     "rules": [
