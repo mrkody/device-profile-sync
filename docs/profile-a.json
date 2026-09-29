@@ -43,11 +43,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "193.33.133.195",
-            "port": 443,
+            "address": "139.100.236.123",
+            "port": 66,
             "users": [
               {
-                "id": "4871e898-0980-402f-882f-e1983ffc851b",
+                "id": "513daaf3-51b4-4811-81fd-f6ef7061b7cd",
                 "encryption": "none"
               }
             ]
@@ -55,18 +55,15 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "serviceName": "grpc"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ozon.ru",
-          "fingerprint": "chrome",
-          "publicKey": "5f_7knvdTuK5bek16zI3cgP5sjDAPJaeFKjd-NALfwQ"
-        }
+        "security": "none"
       },
-      "tag": "vless-01-CIDR",
+      "tag": "vless-01-Finland-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -77,11 +74,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "109.120.181.153",
+            "address": "113.30.154.65",
             "port": 443,
             "users": [
               {
-                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
+                "id": "550a69ec-fec1-4eca-b939-4ee076875fa8",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -98,13 +95,109 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "eh.vk.ru",
+          "serverName": "sellflow.org",
           "fingerprint": "chrome",
-          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "shortId": "db04ce8bdb8900f1"
+          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
         }
       },
-      "tag": "vless-02-Poland-CIDR-VK",
+      "tag": "vless-02-France-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "84.38.181.249",
+            "port": 443,
+            "users": [
+              {
+                "id": "9737cc16-7266-45ce-94d9-6e05a45e0b9c",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "open.spotify.com",
+          "fingerprint": "chrome",
+          "publicKey": "pyZ0M0nE3aGx2UtCXNhajcneyCF4E8J3zpxhIKkQw0w",
+          "shortId": "6bc02f1c474260c3"
+        }
+      },
+      "tag": "vless-03-United-Kingdom-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "37.220.86.155",
+            "port": 443,
+            "users": [
+              {
+                "id": "8f2a6194-1748-4ec7-9c5f-8ad504818aa3",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "uk-cf.aba-hum.store",
+          "fingerprint": "edge"
+        }
+      },
+      "tag": "vless-04-United-Kingdom-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "89.108.83.73",
+            "port": 6443,
+            "users": [
+              {
+                "id": "035c5195-683b-4992-9c94-bd76bd005ad9",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "grpc"
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "s3.storage.selcloud.ru",
+          "fingerprint": "chrome",
+          "publicKey": "ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk",
+          "shortId": "5c766813929a1fdd"
+        }
+      },
+      "tag": "vless-05-Latvia-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -157,7 +250,7 @@
             "tolerance": 0.3
           }
         },
-        "fallbackTag": "vless-01-CIDR"
+        "fallbackTag": "vless-01-Finland-CIDR"
       }
     ],
     "rules": [
