@@ -43,6 +43,175 @@
       "settings": {
         "vnext": [
           {
+            "address": "201.24.115.189",
+            "port": 443,
+            "users": [
+              {
+                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "nvidia.com",
+          "fingerprint": "ios",
+          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
+          "shortId": "db04ce8bdb8900f1"
+        }
+      },
+      "tag": "vless-01-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "176.109.109.105",
+            "port": 9830,
+            "users": [
+              {
+                "id": "5d16ac22-6eea-426f-b778-6f4c2961faef",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "grpc-tunnel"
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "dl.google.com",
+          "fingerprint": "chrome",
+          "publicKey": "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU",
+          "shortId": "aabb"
+        }
+      },
+      "tag": "vless-02-Austria-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "188.68.218.37",
+            "port": 8443,
+            "users": [
+              {
+                "id": "d13baced-948a-40d7-be31-7b44fa768552",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "rumulti.federal-usa.com",
+          "fingerprint": "chrome",
+          "publicKey": "J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs",
+          "shortId": "6b2f4e6ac9b1d2f0"
+        }
+      },
+      "tag": "vless-03-Bouvet-Island-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "188.68.218.37",
+            "port": 8443,
+            "users": [
+              {
+                "id": "d13baced-948a-40d7-be31-7b44fa768552",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "rumulti.federal-usa.com",
+          "fingerprint": "firefox",
+          "publicKey": "J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs",
+          "shortId": "6b2f4e6ac9b1d2f0"
+        }
+      },
+      "tag": "vless-04-Bouvet-Island-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "rumultt.federal-usa.com",
+            "port": 8443,
+            "users": [
+              {
+                "id": "d13baced-948a-40d7-be31-7b44fa768552",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "rumulti.federal-usa.com",
+          "fingerprint": "chrome",
+          "publicKey": "J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs",
+          "shortId": "6b2f4e6ac9b1d2f0"
+        }
+      },
+      "tag": "vless-05-Bouvet-Island-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "45.132.176.161",
             "port": 9882,
             "users": [
@@ -66,42 +235,7 @@
           "publicKey": "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU"
         }
       },
-      "tag": "vless-01-CIDR",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "45.132.177.72",
-            "port": 9844,
-            "users": [
-              {
-                "id": "5d16ac22-6eea-426f-b778-6f4c2961faef",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "serviceName": "grpc-tunnel"
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "dl.google.com",
-          "fingerprint": "chrome",
-          "publicKey": "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU",
-          "shortId": "aabb"
-        }
-      },
-      "tag": "vless-02-CIDR",
+      "tag": "vless-06-Switzerland-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -136,7 +270,42 @@
           "shortId": "aabb"
         }
       },
-      "tag": "vless-03-Switzerland-CIDR",
+      "tag": "vless-07-Switzerland-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.132.176.161",
+            "port": 9891,
+            "users": [
+              {
+                "id": "5d16ac22-6eea-426f-b778-6f4c2961faef",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "grpc-tunnel"
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "dl.google.com",
+          "fingerprint": "chrome",
+          "publicKey": "Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0",
+          "shortId": "aa"
+        }
+      },
+      "tag": "vless-08-Czechia-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -171,107 +340,57 @@
           "shortId": "aabbccdd"
         }
       },
-      "tag": "vless-04-Czechia-CIDR",
+      "tag": "vless-09-Czechia-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
       }
     },
     {
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "45.132.176.161",
-            "port": 9891,
-            "users": [
-              {
-                "id": "5d16ac22-6eea-426f-b778-6f4c2961faef",
-                "encryption": "none"
-              }
-            ]
+            "address": "31.129.42.164",
+            "port": 6443,
+            "password": "ymk9eBP4Ams3-ncYCV4kDAezUzBfkR8x"
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "serviceName": "grpc-tunnel"
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "dl.google.com",
-          "fingerprint": "chrome",
-          "publicKey": "Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0",
-          "shortId": "aa"
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "node111.ichost.cloud",
+          "fingerprint": "chrome"
         }
       },
-      "tag": "vless-05-Czechia-CIDR",
+      "tag": "vless-10-Germany-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
       }
     },
     {
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "159.194.243.175",
+            "address": "37.9.4.182",
             "port": 8443,
-            "users": [
-              {
-                "id": "237f3738-b70a-4146-89a8-10e914387c1d",
-                "encryption": "none"
-              }
-            ]
+            "password": "ymk9eBP4Ams3-ncYCV4kDAezUzBfkR8x"
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.anisabrand.ru",
-          "fingerprint": "chrome",
-          "publicKey": "Q9-Fzdk-ww9qRMYjTvPwQXlbTfdsmEviG0ZXsPxXSxg",
-          "shortId": "51228b5e10828f7f",
-          "spiderX": "/68c37f731fe3745"
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "denode201.velox-network.org",
+          "fingerprint": "edge"
         }
       },
-      "tag": "vless-06-Germany-CIDR",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "159.194.244.132",
-            "port": 443,
-            "users": [
-              {
-                "id": "bfa9f30d-357a-480d-9ff9-ef4dbc891343",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "admin.intand.ru",
-          "fingerprint": "chrome",
-          "publicKey": "DRxBiZFrywyVJE3HruA1StzL1UpXUy5QDJzFx1CCiQQ",
-          "shortId": "62224fbf662c"
-        }
-      },
-      "tag": "vless-07-Germany-CIDR",
+      "tag": "vless-11-Germany-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -306,7 +425,65 @@
           "shortId": "aabb"
         }
       },
-      "tag": "vless-08-Estonia-CIDR",
+      "tag": "vless-12-Estonia-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "185.91.52.139",
+            "port": 443,
+            "password": "ymk9eBP4Ams3-ncYCV4kDAezUzBfkR8x"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "isq.ichost.cloud",
+          "fingerprint": "firefox"
+        }
+      },
+      "tag": "vless-13-Estonia-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.171.132.197",
+            "port": 443,
+            "users": [
+              {
+                "id": "0dca2cfe-98eb-4f9d-9a47-cf87510c558b",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "cdn.v1.EsService"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "es.avroraservice.online",
+          "fingerprint": "qq"
+        }
+      },
+      "tag": "vless-14-Spain-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -336,12 +513,44 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "dl.google.com",
-          "fingerprint": "firefox",
+          "fingerprint": "chrome",
           "publicKey": "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU",
           "shortId": "aabb"
         }
       },
-      "tag": "vless-09-France-CIDR",
+      "tag": "vless-15-France-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "84.38.181.249",
+            "port": 443,
+            "users": [
+              {
+                "id": "9737cc16-7266-45ce-94d9-6e05a45e0b9c",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "open.spotify.com",
+          "fingerprint": "chrome",
+          "publicKey": "pyZ0M0nE3aGx2UtCXNhajcneyCF4E8J3zpxhIKkQw0w",
+          "shortId": "6bc02f1c474260c3"
+        }
+      },
+      "tag": "vless-16-United-Kingdom-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -376,7 +585,249 @@
           "shortId": "aabb"
         }
       },
-      "tag": "vless-10-Norway-CIDR",
+      "tag": "vless-17-Norway-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "176.108.253.133",
+            "port": 443,
+            "users": [
+              {
+                "id": "0dca2cfe-98eb-4f9d-9a47-cf87510c558b",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "cdn.v1.PlService"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "orm.g4m1.biz",
+          "fingerprint": "firefox"
+        }
+      },
+      "tag": "vless-18-Poland-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "orm.g4m1.biz",
+            "port": 443,
+            "users": [
+              {
+                "id": "0dca2cfe-98eb-4f9d-9a47-cf87510c558b",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "cdn.v1.PlService"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "orm.g4m1.biz",
+          "fingerprint": "qq"
+        }
+      },
+      "tag": "vless-19-Poland-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "176.108.241.126",
+            "port": 9892,
+            "users": [
+              {
+                "id": "5d16ac22-6eea-426f-b778-6f4c2961faef",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "grpc-tunnel"
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "dl.google.com",
+          "fingerprint": "edge",
+          "publicKey": "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU",
+          "shortId": "aabb"
+        }
+      },
+      "tag": "vless-20-Poland-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.132.177.72",
+            "port": 9844,
+            "users": [
+              {
+                "id": "5d16ac22-6eea-426f-b778-6f4c2961faef",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "grpc-tunnel"
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "dl.google.com",
+          "fingerprint": "edge",
+          "publicKey": "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU",
+          "shortId": "aabb"
+        }
+      },
+      "tag": "vless-21-Poland-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "176.108.253.133",
+            "port": 443,
+            "users": [
+              {
+                "id": "e0b9fb0f-1bbd-478b-9580-c2294778338b",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "cdn.v1.PlService"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "pl.avroraservice.online",
+          "fingerprint": "firefox"
+        }
+      },
+      "tag": "vless-22-Poland-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "90.156.218.163",
+            "port": 443,
+            "users": [
+              {
+                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "eh.vk.ru",
+          "fingerprint": "chrome",
+          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
+          "shortId": "db04ce8bdb8900f1"
+        }
+      },
+      "tag": "vless-23-Poland-CIDR-VK",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "185.147.26.218",
+            "port": 443,
+            "users": [
+              {
+                "id": "195c005f-ec14-5d06-885c-02fb42575608",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": ""
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "id.vk.com",
+          "fingerprint": "firefox",
+          "publicKey": "jgFG50Yuw5A-La-S54Sge3vnkF3N0GVH6ZDXg15CbHg",
+          "shortId": "58a148ca1ae650b1"
+        }
+      },
+      "tag": "vless-24-Sweden-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -411,7 +862,163 @@
           "shortId": "aa"
         }
       },
-      "tag": "vless-11-Sweden-CIDR",
+      "tag": "vless-25-Sweden-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "5.188.81.58",
+            "port": 443,
+            "users": [
+              {
+                "id": "9021cede-43f0-5aa1-a802-e9590b1a5ff7",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "media.illusion-id.ru",
+          "fingerprint": "firefox",
+          "publicKey": "ihLQuHY1tBBJlWHifpEw6JudejJCMCVPuiz1i3c11g4",
+          "shortId": "190baefd7049401f"
+        }
+      },
+      "tag": "vless-26-Sweden-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "185.91.53.251",
+            "port": 8443,
+            "password": "ymk9eBP4Ams3-ncYCV4kDAezUzBfkR8x"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "sw-one.quickgo.cc",
+          "fingerprint": "edge"
+        }
+      },
+      "tag": "vless-27-Sweden-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.132.177.171",
+            "port": 443,
+            "users": [
+              {
+                "id": "e0b9fb0f-1bbd-478b-9580-c2294778338b",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "cdn.v1.NlService"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "nl.avroraservice.online",
+          "fingerprint": "firefox"
+        }
+      },
+      "tag": "vless-28-Anycast-IP-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "94.228.166.86",
+            "port": 443,
+            "users": [
+              {
+                "id": "e0b9fb0f-1bbd-478b-9580-c2294778338b",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "cdn.v1.NlService"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "nl.avroraservice.online",
+          "fingerprint": "firefox"
+        }
+      },
+      "tag": "vless-29-Anycast-IP-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "nl.avroraservice.online",
+            "port": 443,
+            "users": [
+              {
+                "id": "e0b9fb0f-1bbd-478b-9580-c2294778338b",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "cdn.v1.NlService"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "nl.avroraservice.online",
+          "fingerprint": "firefox"
+        }
+      },
+      "tag": "vless-30-Anycast-IP-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
