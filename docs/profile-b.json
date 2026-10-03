@@ -43,12 +43,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "ee.h1cloud.net",
-            "port": 25895,
+            "address": "201.51.11.117",
+            "port": 443,
             "users": [
               {
-                "id": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
-                "encryption": "none"
+                "id": "5d0e5029-061f-4d75-ac97-718dbf827957",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
@@ -65,12 +66,11 @@
         "realitySettings": {
           "serverName": "www.samsung.com",
           "fingerprint": "chrome",
-          "publicKey": "jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k",
-          "shortId": "a73f0410d728c823",
-          "spiderX": "/"
+          "publicKey": "9eiEOSjRUJfWtjR5_h6qYOIIC7oihvCNtyFFvtu7MEM",
+          "shortId": "ed07a0272e0123e0"
         }
       },
-      "tag": "vless-01-Estonia-CIDR",
+      "tag": "vless-01-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -81,11 +81,84 @@
       "settings": {
         "vnext": [
           {
-            "address": "eg-cai-1.blook.rs",
+            "address": "62.152.58.90",
             "port": 443,
             "users": [
               {
-                "id": "43c25dbb-1331-4427-acb2-4860677d38ed",
+                "id": "1bb2af63-4472-44ed-9c70-8f316258b68b",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": ""
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "360.yandex.ru",
+          "fingerprint": "chrome",
+          "publicKey": "JBKJlzuJH1YzDHAoz28wEKbzWTGpDpKjgtSq0oT0a0k",
+          "shortId": "27e53bbcab7593d7"
+        }
+      },
+      "tag": "vless-02-Poland-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "90.156.218.163",
+            "port": 443,
+            "users": [
+              {
+                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "eh.vk.ru",
+          "fingerprint": "chrome",
+          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
+          "shortId": "db04ce8bdb8900f1"
+        }
+      },
+      "tag": "vless-03-Poland-CIDR-VK",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "161.104.38.98",
+            "port": 443,
+            "users": [
+              {
+                "id": "bcd297ab-f064-0031-a659-5d7f90075fa8",
                 "encryption": "none"
               }
             ]
@@ -94,13 +167,15 @@
       },
       "streamSettings": {
         "network": "xhttp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "eg-cai-1.blook.rs",
-          "fingerprint": "chrome"
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "donatov.net",
+          "fingerprint": "edge",
+          "publicKey": "kYwdZueXQt_DEKPrWTw8yoj6G4AWqupg8UrWjAgWbkE",
+          "shortId": "8ba6e72ee60667f6"
         }
       },
-      "tag": "vless-02-Egypt-CIDR",
+      "tag": "vless-04-Sweden-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -143,7 +218,7 @@
         "strategy": {
           "type": "leastPing"
         },
-        "fallbackTag": "vless-01-Estonia-CIDR"
+        "fallbackTag": "vless-01-CIDR"
       }
     ],
     "rules": [
