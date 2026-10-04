@@ -43,42 +43,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "62.152.58.90",
-            "port": 443,
-            "users": [
-              {
-                "id": "1bb2af63-4472-44ed-9c70-8f316258b68b",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "serviceName": ""
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "360.yandex.ru",
-          "fingerprint": "chrome",
-          "publicKey": "JBKJlzuJH1YzDHAoz28wEKbzWTGpDpKjgtSq0oT0a0k",
-          "shortId": "27e53bbcab7593d7"
-        }
-      },
-      "tag": "vless-01-CIDR",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "176.57.218.235",
+            "address": "109.68.214.220",
             "port": 443,
             "users": [
               {
@@ -98,12 +63,12 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "ru-1-8.imnotgay.party",
+          "serverName": "ru-1-7.imnotgay.party",
           "fingerprint": "edge",
           "publicKey": "gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg"
         }
       },
-      "tag": "vless-02-CIDR",
+      "tag": "vless-01-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -135,11 +100,11 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "ru-1-5.imnotgay.party",
-          "fingerprint": "edge",
+          "fingerprint": "chrome",
           "publicKey": "gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg"
         }
       },
-      "tag": "vless-03-CIDR",
+      "tag": "vless-02-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -150,11 +115,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "9micenasralnakover.net",
-            "port": 8443,
+            "address": "by-msq-2.blook.network",
+            "port": 443,
             "users": [
               {
-                "id": "20009a4d-ecd0-4fb3-ba2d-71a431210ba6",
+                "id": "f9a2e475-0c03-4eb4-8680-0c69f90af8ae",
                 "encryption": "none"
               }
             ]
@@ -165,11 +130,85 @@
         "network": "xhttp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "9micenasralnakover.net",
+          "serverName": "by-msq-2.blook.network",
           "fingerprint": "edge"
         }
       },
-      "tag": "vless-04-Bulgaria-CIDR-CDN",
+      "tag": "vless-03-Belarus-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "62.152.58.90",
+            "port": 443,
+            "users": [
+              {
+                "id": "1bb2af63-4472-44ed-9c70-8f316258b68b",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": ""
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "360.yandex.ru",
+          "fingerprint": "chrome",
+          "publicKey": "JBKJlzuJH1YzDHAoz28wEKbzWTGpDpKjgtSq0oT0a0k",
+          "shortId": "27e53bbcab7593d7",
+          "spiderX": "/"
+        }
+      },
+      "tag": "vless-04-Poland-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "90.156.218.163",
+            "port": 443,
+            "users": [
+              {
+                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "eh.vk.ru",
+          "fingerprint": "chrome",
+          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
+          "shortId": "db04ce8bdb8900f1"
+        }
+      },
+      "tag": "vless-05-Poland-CIDR-VK",
       "mux": {
         "enabled": false,
         "concurrency": 8
