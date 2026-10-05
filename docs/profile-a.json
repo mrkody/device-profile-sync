@@ -43,11 +43,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.137.234.124",
-            "port": 8443,
+            "address": "188.130.209.216",
+            "port": 443,
             "users": [
               {
-                "id": "2345a3ee-1712-4b37-bc51-1e833fa117a0",
+                "id": "444623e9-f27d-487c-b7cc-436931967e79",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -64,82 +64,14 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "api.bitrix24.ru",
+          "serverName": "emaar.ru",
           "fingerprint": "chrome",
-          "publicKey": "uWffyYV5PSa38qThOfFUG_9aHyV4ZbKJ0xc1UK79NUg",
-          "shortId": "44"
+          "publicKey": "M7yPV6xLi9h6EevpqZfXLZBuxoey8kz1c6Bh0pK5fho",
+          "shortId": "170ab9ced015571f",
+          "spiderX": "/"
         }
       },
-      "tag": "vless-01-Hong-Kong-CIDR",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "196.240.125.253",
-            "port": 8443,
-            "users": [
-              {
-                "id": "51f43f39-bb49-4be2-9ab1-9dd1ef9968e6",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "file-6ac2ac24.adhil.uk",
-          "fingerprint": "chrome"
-        }
-      },
-      "tag": "vless-02-The-Netherlands-CIDR",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "176.53.162.90",
-            "port": 443,
-            "users": [
-              {
-                "id": "5117ad77-cd9a-46e9-995b-b601b0b5e435",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "serviceName": "3d7f80c943d676f3"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "trust-shell-qe1.cdn.cachefleet.com",
-          "fingerprint": "chrome"
-        }
-      },
-      "tag": "vless-03-United-States-CIDR",
+      "tag": "vless-01-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -192,7 +124,7 @@
             "tolerance": 0.3
           }
         },
-        "fallbackTag": "vless-01-Hong-Kong-CIDR"
+        "fallbackTag": "vless-01-CIDR"
       }
     ],
     "rules": [
