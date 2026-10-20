@@ -43,6 +43,44 @@
       "settings": {
         "vnext": [
           {
+            "address": "45.151.30.245",
+            "port": 443,
+            "users": [
+              {
+                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": ""
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "cl-fn-in.movietop24.site",
+          "fingerprint": "firefox",
+          "publicKey": "H0_ikooEh725UVXsMCoRPoRYMheLUL_L-xZA3fl_nS4",
+          "shortId": "ae641bd0ef87fbfa"
+        }
+      },
+      "tag": "vless-01-Finland-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "ru2.radiolumens.uk",
             "port": 9444,
             "users": [
@@ -62,7 +100,76 @@
           "fingerprint": "chrome"
         }
       },
-      "tag": "vless-01-United-Kingdom-CIDR",
+      "tag": "vless-02-United-Kingdom-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "193.233.48.89",
+            "port": 443,
+            "users": [
+              {
+                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": ""
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "ru-in-lv-4vp.movietop24.site",
+          "fingerprint": "edge",
+          "publicKey": "wEq2tZjBf-K4874ErnlupCaI24wDTB5elHB-ZXwjBio",
+          "shortId": "b629457828a7d4bf"
+        }
+      },
+      "tag": "vless-03-Latvia-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "84.201.180.13",
+            "port": 443,
+            "users": [
+              {
+                "id": "1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "api-maps.yandex.ru",
+          "fingerprint": "chrome",
+          "publicKey": "DuxQy3KWEZTU_sBhXSfeo_1Q0-0lMcSnx21bWvUi5hQ"
+        }
+      },
+      "tag": "vless-04-The-Netherlands-CIDR-YA",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -93,7 +200,7 @@
           "publicKey": "biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo"
         }
       },
-      "tag": "vless-02-The-Netherlands-CIDR-YA",
+      "tag": "vless-05-The-Netherlands-CIDR-YA",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -136,7 +243,7 @@
         "strategy": {
           "type": "leastPing"
         },
-        "fallbackTag": "vless-01-United-Kingdom-CIDR"
+        "fallbackTag": "vless-01-Finland-CIDR"
       }
     ],
     "rules": [
