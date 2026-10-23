@@ -43,68 +43,26 @@
       "settings": {
         "vnext": [
           {
-            "address": "fast80.slopllex.app",
+            "address": "132.243.214.145",
             "port": 443,
             "users": [
               {
-                "id": "f85af535-d0ff-437f-ad79-4be0e7c1f350",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "6258d81e-70ad-41f2-b15d-3e6ee8fb3009",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
+        "network": "httpupgrade",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "fast80.slopllex.app",
+          "serverName": "subs.wildvf.esal.cl",
           "fingerprint": "chrome"
         }
       },
       "tag": "vless-01-Finland-CIDR",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "fast_s78.slopllex.app",
-            "port": 443,
-            "users": [
-              {
-                "id": "f85af535-d0ff-437f-ad79-4be0e7c1f350",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "fast_s78.slopllex.app",
-          "fingerprint": "edge"
-        }
-      },
-      "tag": "vless-02-Finland-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -141,7 +99,7 @@
           "shortId": "6c5c7900406a1ae7"
         }
       },
-      "tag": "vless-03-Norway-CIDR",
+      "tag": "vless-02-Norway-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -178,7 +136,45 @@
           "shortId": "6c5c7900406a1ae7"
         }
       },
-      "tag": "vless-04-Norway-CIDR",
+      "tag": "vless-03-Norway-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "84.201.170.60",
+            "port": 443,
+            "users": [
+              {
+                "id": "7072eeba-94fd-4fb3-92f2-a4506dd84cd8",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "ads.x5.ru",
+          "fingerprint": "chrome",
+          "publicKey": "KWltK5E_1XCj4H1zDpJqzrfhqb_PeVdZ4PCqedlBKG0",
+          "shortId": "7760b69926f2e507"
+        }
+      },
+      "tag": "vless-04-Romania-CIDR-YA",
       "mux": {
         "enabled": false,
         "concurrency": 8
