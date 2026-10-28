@@ -103,33 +103,242 @@
       "settings": {
         "vnext": [
           {
-            "address": "85.198.85.55",
-            "port": 8443,
+            "address": "194.55.239.89",
+            "port": 443,
             "users": [
               {
-                "id": "7e1dc732-1691-4699-8517-e3ca53887978",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "073b7df7-5527-45a2-ba29-183b85c39071",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
+        "network": "ws",
+        "wsSettings": {
+          "path": "/live.stream.v1.Broadcast/",
+          "headers": {
+            "Host": "broadcast.liveflow.space"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "api.max.ru",
-          "fingerprint": "firefox",
-          "publicKey": "J5j_EwGWM1vgrApg31dnnu5cwMP-OgfJYYwl3kn9zFg"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "broadcast.liveflow.space",
+          "fingerprint": "chrome"
         }
       },
-      "tag": "vless-03-Germany-CIDR",
+      "tag": "vless-03-Estonia-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "ru2.radiolumens.uk",
+            "port": 9444,
+            "users": [
+              {
+                "id": "36cf792c-f07d-4500-97ea-a395e5178deb",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ru2.radiolumens.uk",
+          "fingerprint": "chrome"
+        }
+      },
+      "tag": "vless-04-United-Kingdom-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "87.228.71.195",
+            "port": 443,
+            "users": [
+              {
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/md/1",
+          "headers": {
+            "Host": "ap2.directly.chat"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ap2.directly.chat",
+          "fingerprint": "chrome"
+        }
+      },
+      "tag": "vless-05-Moldova-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "87.228.71.196",
+            "port": 443,
+            "users": [
+              {
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/md/1",
+          "headers": {
+            "Host": "ap2.directly.chat"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ap2.directly.chat",
+          "fingerprint": "chrome"
+        }
+      },
+      "tag": "vless-06-Moldova-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "87.228.71.197",
+            "port": 443,
+            "users": [
+              {
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/md/1",
+          "headers": {
+            "Host": "ap2.directly.chat"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ap2.directly.chat",
+          "fingerprint": "chrome"
+        }
+      },
+      "tag": "vless-07-Moldova-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "87.228.71.198",
+            "port": 443,
+            "users": [
+              {
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/md/1",
+          "headers": {
+            "Host": "ap2.directly.chat"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ap2.directly.chat",
+          "fingerprint": "chrome"
+        }
+      },
+      "tag": "vless-08-Moldova-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "ap2.directly.chat",
+            "port": 443,
+            "users": [
+              {
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/md/1",
+          "headers": {
+            "Host": "ap2.directly.chat"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ap2.directly.chat",
+          "fingerprint": "chrome"
+        }
+      },
+      "tag": "vless-09-Moldova-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -159,7 +368,7 @@
           "fingerprint": "chrome"
         }
       },
-      "tag": "vless-04-Poland-CIDR",
+      "tag": "vless-10-Poland-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
