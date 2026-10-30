@@ -39,80 +39,6 @@
   ],
   "outbounds": [
     {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "ee.h1cloud.net",
-            "port": 25895,
-            "users": [
-              {
-                "id": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.samsung.com",
-          "fingerprint": "chrome",
-          "publicKey": "jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k",
-          "shortId": "a73f0410d728c823"
-        }
-      },
-      "tag": "vless-01-CIDR",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "ee.h1cloud.net",
-            "port": 25895,
-            "users": [
-              {
-                "id": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.samsung.com",
-          "fingerprint": "chrome",
-          "publicKey": "jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k",
-          "shortId": "a73f0410d728c823"
-        }
-      },
-      "tag": "vless-02-Estonia-CIDR",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -131,7 +57,7 @@
           "fingerprint": "firefox"
         }
       },
-      "tag": "vless-03-Lithuania-CIDR",
+      "tag": "vless-01-Lithuania-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -164,70 +90,7 @@
           "fingerprint": "chrome"
         }
       },
-      "tag": "vless-04-The-Netherlands-CIDR",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "apis.repotraffic.org",
-            "port": 2096,
-            "users": [
-              {
-                "id": "f95ad5b8-32b0-48bc-a639-c229d8c4a684",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "apis.repotraffic.org",
-          "fingerprint": "ios"
-        }
-      },
-      "tag": "vless-05-The-Netherlands-CIDR-VK",
-      "mux": {
-        "enabled": false,
-        "concurrency": 8
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "189.74.114.119",
-            "port": 443,
-            "users": [
-              {
-                "id": "abd5755a-8b77-4ed4-afbd-f2ccbc08e6f5",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "serviceName": "3e99d50d5740985d"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "api.mediaklenov.cc",
-          "fingerprint": "firefox"
-        }
-      },
-      "tag": "vless-06-The-Netherlands-CIDR",
+      "tag": "vless-02-The-Netherlands-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -263,7 +126,7 @@
           "fingerprint": "firefox"
         }
       },
-      "tag": "vless-07-The-Netherlands-CIDR-VK",
+      "tag": "vless-03-The-Netherlands-CIDR-VK",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -274,11 +137,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "ararat.rtkdvbr.cc",
+            "address": "189.74.114.119",
             "port": 443,
             "users": [
               {
-                "id": "04b7c62b-762e-4a8c-ba37-8328d25c8d74",
+                "id": "abd5755a-8b77-4ed4-afbd-f2ccbc08e6f5",
                 "encryption": "none"
               }
             ]
@@ -286,17 +149,17 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/amws"
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "3e99d50d5740985d"
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "ararat.rtkdvbr.cc",
-          "fingerprint": "edge"
+          "serverName": "api.mediaklenov.cc",
+          "fingerprint": "firefox"
         }
       },
-      "tag": "vless-08-The-Netherlands-CIDR-VK",
+      "tag": "vless-04-The-Netherlands-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -326,7 +189,7 @@
           "fingerprint": "firefox"
         }
       },
-      "tag": "vless-09-The-Netherlands-CIDR-VK",
+      "tag": "vless-05-The-Netherlands-CIDR-VK",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -357,7 +220,7 @@
           "publicKey": "biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo"
         }
       },
-      "tag": "vless-10-The-Netherlands-CIDR-YA",
+      "tag": "vless-06-The-Netherlands-CIDR-YA",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -387,7 +250,7 @@
           "fingerprint": "chrome"
         }
       },
-      "tag": "vless-11-Poland-CIDR",
+      "tag": "vless-07-Poland-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -398,11 +261,85 @@
       "settings": {
         "vnext": [
           {
-            "address": "213.165.60.187",
-            "port": 443,
+            "address": "pl1.h1cloud.net",
+            "port": 27591,
             "users": [
               {
-                "id": "1fe01c8a-ab37-4e95-bbfc-95d4a608931e",
+                "id": "056405e8-de9f-4d0d-8145-956f13cc34da",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.samsung.com",
+          "fingerprint": "chrome",
+          "publicKey": "LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM",
+          "shortId": "6c5c7900406a1ae7"
+        }
+      },
+      "tag": "vless-08-Poland-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "pl1.h1cloud.net",
+            "port": 27591,
+            "users": [
+              {
+                "id": "056405e8-de9f-4d0d-8145-956f13cc34da",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.samsung.com",
+          "fingerprint": "chrome",
+          "publicKey": "LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM",
+          "shortId": "6c5c7900406a1ae7"
+        }
+      },
+      "tag": "vless-09-Poland-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "178.236.242.254",
+            "port": 8443,
+            "users": [
+              {
+                "id": "c05ec3c7-2784-da2b-aa98-a3c132860fcb",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -414,18 +351,56 @@
         "network": "tcp",
         "tcpSettings": {
           "header": {
-            "type": ""
+            "type": "none"
           }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "xpc2.waspnest.space",
+          "serverName": "xnod13x.artemida.live",
           "fingerprint": "firefox",
-          "publicKey": "3yddqUiJeYh6absBxMNR6OSMRjvi_-wVXy1GGS5K-y0",
-          "shortId": "ae97223a8f799872"
+          "publicKey": "ZRTNgwFRP8viY4SQOgPTfWlLWJCwY3dr0aawA7vHwhU",
+          "shortId": "a1b2c3d4e5f6a7b8"
         }
       },
-      "tag": "vless-12-United-States-CIDR",
+      "tag": "vless-10-United-States-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "xnod13x.artemida.live",
+            "port": 8443,
+            "users": [
+              {
+                "id": "c05ec3c7-2784-da2b-aa98-a3c132860fcb",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "xnod13x.artemida.live",
+          "fingerprint": "firefox",
+          "publicKey": "ZRTNgwFRP8viY4SQOgPTfWlLWJCwY3dr0aawA7vHwhU",
+          "shortId": "a1b2c3d4e5f6a7b8"
+        }
+      },
+      "tag": "vless-11-United-States-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -478,7 +453,7 @@
             "tolerance": 0.3
           }
         },
-        "fallbackTag": "vless-01-CIDR"
+        "fallbackTag": "vless-01-Lithuania-CIDR"
       }
     ],
     "rules": [
