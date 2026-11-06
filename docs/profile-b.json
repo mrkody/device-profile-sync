@@ -43,11 +43,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.178.208.140",
+            "address": "185.173.179.218",
             "port": 443,
             "users": [
               {
-                "id": "ea277838-a188-44f1-a2e8-94aa110c4f27",
+                "id": "f219ffe2-bc36-495f-a83d-8f9ac4af05fd",
                 "encryption": "none"
               }
             ]
@@ -58,7 +58,7 @@
         "network": "xhttp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "static.bakarova-top.ru",
+          "serverName": "ru1.cdn-space.org",
           "fingerprint": "chrome"
         }
       },
@@ -89,7 +89,7 @@
         "network": "tcp",
         "tcpSettings": {
           "header": {
-            "type": "none"
+            "type": ""
           }
         },
         "security": "tls",
@@ -109,11 +109,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "537df6t.ch4.h1clayd.click",
+            "address": "176.124.218.80",
             "port": 443,
             "users": [
               {
-                "id": "1bbcd15c-aa70-4a09-9266-56951742c401",
+                "id": "981c7ccc-2b17-473c-8358-7fd1d6eec1b4",
                 "encryption": "none"
               }
             ]
@@ -121,22 +121,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
+        "network": "ws",
+        "wsSettings": {
+          "path": "/static/js/vendor.f857f795.js",
+          "headers": {
+            "Host": "bg2-ws.gacvpn.site"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "537df6t.ch4.h1clayd.click",
-          "fingerprint": "chrome",
-          "publicKey": "Q1X7TVCcrpg3d3lsRRpK-RF1ZQcPj_Yv5mUGvg7f1HE",
-          "shortId": "1577fac211816ec3",
-          "spiderX": "/"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "bg2-ws.gacvpn.site",
+          "fingerprint": "firefox"
         }
       },
-      "tag": "vless-03-Switzerland-CIDR",
+      "tag": "vless-03-Bulgaria-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -147,11 +145,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "d0f7fax.ch4.h1clayd.click",
+            "address": "falmero.store",
             "port": 443,
             "users": [
               {
-                "id": "1bbcd15c-aa70-4a09-9266-56951742c401",
+                "id": "8fb19a9e-ca2b-433a-8469-e4c7796033b2",
                 "encryption": "none"
               }
             ]
@@ -159,17 +157,53 @@
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "d0f7fax.ch4.h1clayd.click",
-          "fingerprint": "firefox",
-          "publicKey": "xei6NUuES9dJDfhU05zlUOnxFjbXANV6iKtxObEC7iA",
-          "shortId": "bc633b43a002e06a",
-          "spiderX": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "glush.de1.v1"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "falmero.store",
+          "fingerprint": "chrome"
         }
       },
-      "tag": "vless-04-Switzerland-CIDR",
+      "tag": "vless-04-Germany-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "186.246.4.49",
+            "port": 993,
+            "users": [
+              {
+                "id": "981c7ccc-2b17-473c-8358-7fd1d6eec1b4",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/static/js/runtime.d9e71138.js",
+          "headers": {
+            "Host": "msk5.gacvpn.site"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "msk5.gacvpn.site",
+          "fingerprint": "firefox"
+        }
+      },
+      "tag": "vless-05-Germany-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -202,7 +236,7 @@
           "fingerprint": "chrome"
         }
       },
-      "tag": "vless-05-Lithuania-CIDR",
+      "tag": "vless-06-Lithuania-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -213,33 +247,32 @@
       "settings": {
         "vnext": [
           {
-            "address": "ru.galacticworld.online",
-            "port": 443,
+            "address": "176.124.218.80",
+            "port": 993,
             "users": [
               {
-                "id": "8850dcb3-3978-488e-899c-18def71e1ad9",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "981c7ccc-2b17-473c-8358-7fd1d6eec1b4",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
+        "network": "ws",
+        "wsSettings": {
+          "path": "/static/js/vendor.448f02e7.js",
+          "headers": {
+            "Host": "lv.gacvpn.site"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ru.galacticworld.online",
-          "fingerprint": "firefox",
-          "publicKey": "RAfUjx8zBhp0gpSALr09Myq_lpqqjE3hBVXlUUodVAs"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "lv.gacvpn.site",
+          "fingerprint": "chrome"
         }
       },
-      "tag": "vless-06-The-Netherlands-CIDR",
+      "tag": "vless-07-Latvia-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
@@ -266,10 +299,222 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "ru1.cdn-space.org",
+          "fingerprint": "firefox"
+        }
+      },
+      "tag": "vless-08-The-Netherlands-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "185.86.147.175",
+            "port": 443,
+            "users": [
+              {
+                "id": "7955bf18-35c4-412d-aabd-c0b36c793063",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/service/telemetry/045d381f1166/",
+          "headers": {
+            "Host": "bhjolq0d0l.flowersgood.top"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "bhjolq0d0l.flowersgood.top",
+          "fingerprint": "firefox"
+        }
+      },
+      "tag": "vless-09-The-Netherlands-CIDR-VK",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "77.233.222.33",
+            "port": 993,
+            "users": [
+              {
+                "id": "981c7ccc-2b17-473c-8358-7fd1d6eec1b4",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/static/js/vendor.32acab26.js",
+          "headers": {
+            "Host": "msk6.gacvpn.site"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "msk6.gacvpn.site",
+          "fingerprint": "firefox"
+        }
+      },
+      "tag": "vless-10-Poland-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "185.178.208.140",
+            "port": 443,
+            "users": [
+              {
+                "id": "ea277838-a188-44f1-a2e8-94aa110c4f27",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "static.bakarova-top.ru",
+          "fingerprint": "chrome"
+        }
+      },
+      "tag": "vless-11-Romania-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "62.113.42.147",
+            "port": 995,
+            "users": [
+              {
+                "id": "981c7ccc-2b17-473c-8358-7fd1d6eec1b4",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/static/js/runtime.6dc28486.js",
+          "headers": {
+            "Host": "fi.gacvpn.site"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "fi.gacvpn.site",
+          "fingerprint": "chrome"
+        }
+      },
+      "tag": "vless-12-Slovakia-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "194.87.118.232",
+            "port": 993,
+            "users": [
+              {
+                "id": "981c7ccc-2b17-473c-8358-7fd1d6eec1b4",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/static/js/vendor.2e12e7f4.js",
+          "headers": {
+            "Host": "us2-ws.gacvpn.site"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "us2-ws.gacvpn.site",
           "fingerprint": "edge"
         }
       },
-      "tag": "vless-07-The-Netherlands-CIDR",
+      "tag": "vless-13-United-States-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "ea0gmd8p.mtrxnet.click",
+            "port": 53898,
+            "users": [
+              {
+                "id": "bb190cdb-82ae-4212-b6cd-8ae9e6b768dd",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": ""
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "ea0gmd8p.mtrxnet.click",
+          "fingerprint": "firefox",
+          "publicKey": "aV_BHCeZ30y4-5rpUIHaWHMYAgogLsw4AE06Rw2X4WE",
+          "shortId": "e202a94ad1711af2"
+        }
+      },
+      "tag": "vless-14-Anycast-IP-CIDR",
       "mux": {
         "enabled": false,
         "concurrency": 8
