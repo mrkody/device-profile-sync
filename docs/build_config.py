@@ -68,8 +68,16 @@ def parse_vless(line):
     ss = outbound["streamSettings"]
 
     if net == 'tcp':
-        header_type = q.get('headerType', 'none')
+        # Xray rejects the whole config ("unknown config id") on an empty header type
+        header_type = q.get('headerType') or 'none'
         ss["tcpSettings"] = {"header": {"type": header_type}}
+    elif net == 'xhttp':
+        xhttp = {"path": q.get('path') or '/'}
+        if q.get('host'):
+            xhttp["host"] = q['host']
+        if q.get('mode'):
+            xhttp["mode"] = q['mode']
+        ss["xhttpSettings"] = xhttp
     elif net == 'ws':
         path = q.get('path', '/')
         host_hdr = q.get('host', '')
