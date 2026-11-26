@@ -39,6 +39,44 @@
   ],
   "outbounds": [
     {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "rua.strauspro.com",
+            "port": 8443,
+            "users": [
+              {
+                "id": "8f092ef0-a7e6-03e9-b989-836aebc00ff7",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "ya.ru",
+          "fingerprint": "chrome",
+          "publicKey": "DulhUFMYzxIsucjtPONJQMszzyi9V6bqQ9WI3GjGFAY",
+          "shortId": "abc123"
+        }
+      },
+      "tag": "vless-01-CIDR",
+      "mux": {
+        "enabled": false,
+        "concurrency": 8
+      }
+    },
+    {
       "tag": "direct",
       "protocol": "freedom",
       "settings": {}
@@ -85,7 +123,7 @@
             "tolerance": 0.3
           }
         },
-        "fallbackTag": "direct"
+        "fallbackTag": "vless-01-CIDR"
       }
     ],
     "rules": [
